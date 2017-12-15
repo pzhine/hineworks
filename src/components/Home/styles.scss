@@ -1,0 +1,5 @@
+@import '../../shared-styles/index';
+
+.paragraph + .paragraph {
+  padding-top: 1em;
+}

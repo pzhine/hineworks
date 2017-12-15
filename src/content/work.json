@@ -1,0 +1,110 @@
+{
+  "heading": "Some recent work",
+  "projects": [
+    {
+      "slug": "watsonportraits",
+      "title": "Tennis Portraits with Watson",
+      "info": [
+        ["Agency", "Ogilvy &amp; Mather"],
+        ["Clients", "IBM, US Open"],
+        ["Stack", "Javascript, Node.js"],
+        ["Media", "Kiosk, Desktop, Mobile"]
+      ],
+      "body": [
+        "Ogilvy had developed a photobooth kiosk application for IBM that uses the Watson Tone Analyzer API to generate an “emoji portrait” of the user based on their responses to a set of personality questions.",
+        "I was tasked with adapting the Javascript codebase to content specific to the US Open, where it ran in a series of photobooths, as well as building a play-at-home version for web and mobile web."
+      ],
+      "links": [
+        ["Visit Site", "http://watsonportraits.ibm.com"]
+      ],
+      "media": {
+        "mobile": ["index", "video-mobile", "detail1", "detail2", "screen1"],
+        "desktop": ["index", "video-desktop", "video-mobile", "detail1", "detail2", "screen1", "screen2", "screen3"]
+      }
+    },
+    {
+      "slug": "ibm-quantum",
+      "title": "Try Your Hand at Quantum",
+      "info": [
+        ["Agency", "Ogilvy &amp; Mather"],
+        ["Clients", "IBM"],
+        ["Stack", "React, Redux, Webpack"],
+        ["Media", "Desktop, Mobile"]
+      ],
+      "links": [
+        ["Visit Site", "http://research.ibm.com/ibm-q/quantum-card-test"]
+      ],
+      "media": {
+        "mobile": ["index", "video-mobile", "screen1"],
+        "desktop": ["index", "video-desktop", "video-mobile", "screen1"]
+      }
+    },
+    {
+      "slug": "ibm-himms",
+      "title": "Watson Health Activation",
+      "info": [
+        ["Agency", "Ogilvy &amp; Mather"],
+        ["Clients", "IBM"],
+        ["Stack", "React, Redux, Webpack"],
+        ["Media", "Kiosk"]
+      ],
+      "links": [
+        ["View Demo", "http://no:robots@paulzhine.me/demos/himms", true]
+      ],
+      "media": {
+        "mobile": ["index"],
+        "desktop": ["index", "video-desktop", "screen1", "screen2", "screen3"]
+      }
+    },
+    {
+      "slug": "ikea404",
+      "title": "IKEA 404 Puzzle Prototype",
+      "info": [
+        ["Agency", "Ogilvy &amp; Mather"],
+        ["Clients", "IKEA"],
+        ["Stack", "Javascript, Gulp"],
+        ["Media", "Desktop, Mobile"]
+      ],
+      "links": [
+        ["View Demo", "http://no:robots@paulzhine.me/demos/ikea", true]
+      ],
+      "media": {
+        "mobile": ["index", "video-mobile", "screen1", "screen2"],
+        "desktop": ["index", "video-desktop", "video-mobile", "screen1", "screen2"]
+      }
+    },
+    {
+      "slug": "gerber",
+      "title": "\"Good Start New Look\"",
+      "info": [
+        ["Agency", "Ogilvy &amp; Mather"],
+        ["Clients", "Gerber"],
+        ["Stack", "Javascript, Gulp"],
+        ["Media", "Desktop, Mobile"]
+      ],
+      "links": [
+        ["View Demo", "http://no:robots@paulzhine.me/demos/gerber", true]
+      ],
+      "media": {
+        "mobile": ["index", "video-mobile", "screen1", "screen2"],
+        "desktop": ["index", "video-desktop", "video-mobile", "screen1", "screen2"]
+      }
+    },
+    {
+      "slug": "teletask",
+      "title": "Teletask iOS App",
+      "info": [
+        ["Clients", "Teletask, Inc."],
+        ["Stack", "React Native, Redux"],
+        ["Media", "iOS"]
+      ],
+      "media": {
+        "mobile": ["index", "video-mobile", "screen1", "screen2"],
+        "desktop": ["index", "video-mobile"]
+      },
+      "links": [
+        ["View in App Store", "https://itunes.apple.com/us/app/teletask/id1235295737?ls=1&mt=8"]
+      ]
+    }
+  ]
+}
