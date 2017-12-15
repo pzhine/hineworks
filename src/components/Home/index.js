@@ -1,19 +1,16 @@
 import React from 'react'
+import cx from 'classnames'
 import styles from './styles.scss'
+import config from '../../content/config.json'
 
-function Home() {
-  return (
-    <section>
-      <p className={styles.paragraph}>
-        Welcome to the <strong>Universal React Starter-kyt</strong>. This starter kyt should serve
-        as the base for an advanced, server-rendered React app.
-      </p>
-      <p className={styles.paragraph}>
-        Check out the Tools section for an outline of the libraries that are used in this
-        Starter-kyt.
-      </p>
-    </section>
-  )
-}
+const Home = () =>
+  <section className={styles.home}>
+    <div className={cx(styles.title, styles.line1)}>
+      {config.title[0]}
+    </div>
+    <div className={cx(styles.title, styles.line2)}>
+      {config.title[1]}
+    </div>
+  </section>
 
 export default Home

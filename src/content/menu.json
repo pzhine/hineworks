@@ -1,16 +1,14 @@
 [
-  [
-    {
-      "title": "LinkedIn",
-      "url": "https://linkedin.com/in/pzhine"
-    },
-    {
-      "title": "Github",
-      "url": "https://github.com/pzhine"
-    },
-    {
-      "title": "paul@hine.me",
-      "url": "mailto:paul@hine.me"
-    }
-  ]
+  {
+    "title": "LinkedIn",
+    "url": "https://linkedin.com/in/pzhine"
+  },
+  {
+    "title": "Github",
+    "url": "https://github.com/pzhine"
+  },
+  {
+    "title": "CV",
+    "url": "http://static.hine.works/resume.pdf"
+  }
 ]

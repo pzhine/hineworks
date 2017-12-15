@@ -1,35 +1,40 @@
 import React from 'react'
-import Link from 'react-router/lib/Link'
+import { Link } from 'react-router-dom'
 import cx from 'classnames'
 import { connect } from 'react-redux'
 import styles from './styles.scss'
-import HamburgerIcon from '../../icons/hamburger.svg'
-import CloseIcon from '../../icons/close.svg'
 import data from '../../content/menu.json'
 import config from '../../content/config.json'
 import actions from '../../redux/app/actions'
 
+import hamburgerIcon from '../../icons/hamburger.svg'
+import closeIcon from '../../icons/close.svg'
+
 const Menu = ({ toggleMenuIsActive, app }) =>
   <div className={cx(styles.menu, { [styles.isActive]: app.menuIsActive })}>
-    <HamburgerIcon className={styles.hamburger} onClick={() => toggleMenuIsActive(true)} />
-    <CloseIcon className={styles.close} onClick={() => toggleMenuIsActive(false)} />
+    <button onClick={() => toggleMenuIsActive(true)} className={styles.hamburger}>
+      <img src={hamburgerIcon} alt={'Menu'} />
+    </button>
+    <button onClick={() => toggleMenuIsActive(false)} className={styles.close}>
+      <img src={closeIcon} alt={'Close'} />
+    </button>
     <div className={styles.container}>
-      <Link className={styles.title} to="/" replace>
-        {config.title}
+      <Link className={styles.title} to="/">
+        {config.title.join(' ')}
       </Link>
-      <ul>
-        {data.map(item =>
-          <li key={item.path || item.url}>
-            {item.path
-              ? <Link to={item.path}>
-                  {item.title}
-                </Link>
-              : <a href={item.url} target="_blank">
-                  {item.title}
-                </a>}
-          </li>
-        )}
-      </ul>
+      <a className={styles.email} target="_blank" href={`mailto:${config.email}`}>
+        {config.email}
+      </a>
+      {data.map(
+        item =>
+          item.path
+            ? <Link to={item.path} key={item.path || item.url}>
+                {item.title}
+              </Link>
+            : <a href={item.url} target="_blank" key={item.path || item.url}>
+                {item.title}
+              </a>
+      )}
     </div>
   </div>
 

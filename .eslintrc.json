@@ -4,6 +4,7 @@
   "rules": {
     "no-return-assign": ["error", "except-parens"],
     "no-underscore-dangle": "off",
+    "no-warning-comments": "off",
     "react/prop-types": "off",
     "react/sort-comp": "off",
     "react/jsx-filename-extension": "off",

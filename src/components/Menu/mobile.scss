@@ -1,3 +1,92 @@
 .menu {
-  background: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+  background: transparent;
+
+  * {
+    transition: opacity 300ms ease-in-out;
+  }
+
+  .hamburger, .close {
+    position: fixed;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 1.5em;
+    right: 1.5em;
+    z-index: 100;
+  }
+
+  .hamburger {
+    opacity: 1;
+    pointer-events: all;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  .close {
+    opacity: 0;
+    pointer-events: none;
+
+    img {
+      width: 18px;
+    }
+  }
+
+  .container {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $background-color;
+    font-size: 1.5em;
+
+    a, a:visited, a:active {
+      color: $body-color;
+      margin-bottom: 5vh;
+
+      &.email {
+        color: $link-color;
+        margin-bottom: 8vh;
+      }
+      &.title {
+        text-decoration: none;
+      }
+    }
+
+    .title {
+      font-family: $header-font;
+      font-size: 2em;
+    }
+  }
+
+  &.isActive {
+    .container {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .hamburger {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .close {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
 }

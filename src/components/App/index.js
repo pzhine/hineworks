@@ -1,29 +1,22 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from '../../redux/configureStore'
 import styles from './styles.scss'
 
 import Home from '../Home'
-import Tools from '../Tools'
+import Project from '../Project'
+import Menu from '../Menu'
 
 const App = () =>
-  <div>
-    <i className={styles.logo} />
-    <ul className={styles.nav}>
-      <li className={styles.navItem}>
-        <Link className={styles.link} to="/">
-          Home
-        </Link>
-      </li>
-      <li className={styles.navItem}>
-        <Link className={styles.link} to="/tools">
-          Tools
-        </Link>
-      </li>
-    </ul>
-    <div className={styles.content}>
-      <Route exact path="/" component={Home} />
-      <Route path="/tools" component={Tools} />
-    </div>
-  </div>
+  <Provider store={store}>
+    <main className={styles.app}>
+      <Menu />
+      <div className={styles.content}>
+        <Route exact path="/" component={Home} />
+        <Route path="/on/:project" component={Project} />
+      </div>
+    </main>
+  </Provider>
 
 export default App

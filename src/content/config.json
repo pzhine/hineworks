@@ -1,7 +1,7 @@
 {
-  "title": "Paul Hine",
-  "title2": "Hi,",
+  "title": ["Paul", "Hine"],
   "greeting": "Nice to see you",
   "intro": "This is the professional portfolio of Paul Hine, full-stack web engineer. Let’s <a href='mailto:paul.hine@gmail.com'>be in touch</a>!",
-  "cvUrl": "http://paulhine.me"
+  "cvUrl": "http://paulhine.me",
+  "email": "paul@hine.works"
 }
