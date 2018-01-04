@@ -1,5 +1,4 @@
-$mobile-width: 480px;
-$desktop-width: 1024px;
+@import './variables';
 
 @mixin mobile {
   @media (max-width: #{$mobile-width}) {
@@ -16,5 +15,45 @@ $desktop-width: 1024px;
 @mixin desktop {
   @media (min-width: #{$desktop-width + 1}) {
     @content;
+  }
+}
+
+@mixin center-both {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@mixin video-thumb {
+  width: 100%;
+
+  .thumb {
+    filter: brightness(0.5);
+    transition: filter $transition-super-quick $ease;
+  }
+
+  &:active {
+    .thumb {
+      filter:brightness(0.2);
+    }
+    button {
+      transform: scale(0.9);
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .playButton {
+    pointer-events: none;
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    z-index: 10;
+    transform-origin: center center;
   }
 }

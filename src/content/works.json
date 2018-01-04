@@ -2,7 +2,7 @@
   "heading": "Some recent work",
   "projects": [
     {
-      "slug": "watsonportraits",
+      "slug": "ibm-usopen",
       "title": "Tennis Portraits with Watson",
       "info": [
         ["Agency", "Ogilvy &amp; Mather"],
@@ -12,14 +12,22 @@
       ],
       "body": [
         "Ogilvy had developed a photobooth kiosk application for IBM that uses the Watson Tone Analyzer API to generate an “emoji portrait” of the user based on their responses to a set of personality questions.",
-        "I was tasked with adapting the Javascript codebase to content specific to the US Open, where it ran in a series of photobooths, as well as building a play-at-home version for web and mobile web."
+        "I was tasked with adapting the Javascript codebase for photobooths at the US Open as well as building a play-at-home version for web and mobile web."
       ],
       "links": [
         ["Visit Site", "http://watsonportraits.ibm.com"]
       ],
       "media": {
-        "mobile": ["index", "video-mobile", "detail1", "detail2", "screen1"],
-        "desktop": ["index", "video-desktop", "video-mobile", "detail1", "detail2", "screen1", "screen2", "screen3"]
+        "mobile": {
+          "index": ["index-mobile"],
+          "videos": ["video2-mobile", "video3-mobile"],
+          "photos": ["photo1", "photo2", "photo3"]
+        },
+        "desktop": {
+          "index": ["index-desktop"],
+          "videos": ["video1-desktop", "video2-desktop", "video2-mobile", "video3-mobile"],
+          "photos": ["photo1", "photo2", "photo3"]
+        }
       }
     },
     {
@@ -35,12 +43,24 @@
         ["Visit Site", "http://research.ibm.com/ibm-q/quantum-card-test"]
       ],
       "media": {
-        "mobile": ["index", "video-mobile", "screen1"],
-        "desktop": ["index", "video-desktop", "video-mobile", "screen1"]
-      }
+        "mobile": {
+          "index": ["screen1-mobile"],
+          "videos": ["video-mobile"],
+          "screens": ["screen1-mobile", "screen2-mobile"]
+        },
+        "desktop": {
+          "index": ["screen1-desktop"],
+          "videos": ["video-desktop"],
+          "screens": ["screen1-desktop", "screen1-mobile", "screen2-mobile"]
+        }
+      },
+      "body": [
+        "IBM built the world’s first web API for a quantum computer and asked Ogilvy to develop a page that showcased this new technology.",
+        "I developed a page to demonstrate the capabilities of the new technology. The demo uses the classic shell game Four Card Monte to illustrate the quantum computer’s ability to find a queen in a set of four cards on the first try, whereas a conventional computer requires up to 4 tries."
+      ]
     },
     {
-      "slug": "ibm-himms",
+      "slug": "ibm-himss",
       "title": "Watson Health Activation",
       "info": [
         ["Agency", "Ogilvy &amp; Mather"],
@@ -49,15 +69,27 @@
         ["Media", "Kiosk"]
       ],
       "links": [
-        ["View Demo", "http://no:robots@paulzhine.me/demos/himms", true]
+        ["View Demo", "http://static.hine.works/demos/himms", true]
       ],
       "media": {
-        "mobile": ["index"],
-        "desktop": ["index", "video-desktop", "screen1", "screen2", "screen3"]
-      }
+        "mobile": {
+          "index": ["screen1", "screen2"],
+          "videos": ["video-desktop"],
+          "screens": ["screen1", "screen2", "screen3"]
+        },
+        "desktop": {
+          "index": ["screen1"],
+          "videos": ["video-desktop"],
+          "screens": ["screen1", "screen2", "screen3"]
+        }
+      },
+      "body": [
+        "IBM wanted to show off the ways that Watson was empowering healthcare professionals with a set of kiosks at the HIMSS (Health Information & Management Systems Society) conference.",
+        "I built an interactive video experience that was deployed on nine screens throughout the conference, each with its own  content and chapter navigation."
+      ]
     },
     {
-      "slug": "ikea404",
+      "slug": "ikeagrams",
       "title": "IKEA 404 Puzzle Prototype",
       "info": [
         ["Agency", "Ogilvy &amp; Mather"],
@@ -66,12 +98,24 @@
         ["Media", "Desktop, Mobile"]
       ],
       "links": [
-        ["View Demo", "http://no:robots@paulzhine.me/demos/ikea", true]
+        ["View Demo", "http://static.hine.works/demos/ikea", true]
       ],
       "media": {
-        "mobile": ["index", "video-mobile", "screen1", "screen2"],
-        "desktop": ["index", "video-desktop", "video-mobile", "screen1", "screen2"]
-      }
+        "mobile": {
+          "index": ["screen2-mobile"],
+          "videos": ["video-mobile"],
+          "screens": ["screen1-mobile", "screen2-mobile"]
+        },
+        "desktop": {
+          "index": ["screen1-desktop"],
+          "videos": ["video-desktop", "video-mobile"],
+          "screens": ["screen1-desktop", "screen1-tablet", "screen1-mobile"]
+        }
+      },
+      "body": [
+        "The creative team at Ogilvy noticed that the IKEA 404 page was very minimal and serious, so I worked with them to prototype a puzzle app that would liven up the page.",
+        "The result was a game inspired by the Chinese tangram game in which the player must rearrange unassembled IKEA furniture (or broken plates, in this example) into fun shapes."
+      ]
     },
     {
       "slug": "gerber",
@@ -83,12 +127,24 @@
         ["Media", "Desktop, Mobile"]
       ],
       "links": [
-        ["View Demo", "http://no:robots@paulzhine.me/demos/gerber", true]
+        ["View Demo", "http://static.hine.works/demos/gerber", true]
       ],
       "media": {
-        "mobile": ["index", "video-mobile", "screen1", "screen2"],
-        "desktop": ["index", "video-desktop", "video-mobile", "screen1", "screen2"]
-      }
+        "mobile": {
+          "index": ["screen1-mobile"],
+          "videos": ["video-mobile"],
+          "screens": ["screen1-mobile", "screen2-mobile"]
+        },
+        "desktop": {
+          "index": ["screen1-desktop"],
+          "videos": ["video-desktop", "video-mobile"],
+          "screens": ["screen1-desktop", "screen2-mobile"]
+        }
+      },
+      "body": [
+        "When Gerber redesigned the labels for their Good Start line of formula, they wanted to spread the word and help customers learn more about the new labels.",
+        "I built a microsoite that users reached through social media, email and a YouTube campaign."
+      ]
     },
     {
       "slug": "teletask",
@@ -99,11 +155,23 @@
         ["Media", "iOS"]
       ],
       "media": {
-        "mobile": ["index", "video-mobile", "screen1", "screen2"],
-        "desktop": ["index", "video-mobile"]
+        "mobile": {
+          "index": ["screen4"],
+          "videos": [],
+          "screens": ["screen1", "screen2", "screen3", "screen4", "screen5"]
+        },
+        "desktop": {
+          "index": ["screen4"],
+          "videos": [],
+          "screens": ["screen1", "screen2", "screen3", "screen4", "screen5"]
+        }
       },
       "links": [
         ["View in App Store", "https://itunes.apple.com/us/app/teletask/id1235295737?ls=1&mt=8"]
+      ],
+      "body": [
+        "Teletask is a web-based notification and messenger service that specializes in serving healthcare and institutional organizations.",
+        "I built an iOS application in React Native that adds access to many of the service’s features in a rich native app. The Android version is currently in the works."
       ]
     }
   ]

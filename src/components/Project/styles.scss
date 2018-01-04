@@ -1,5 +1,11 @@
 @import '../../shared-styles/index';
 
-.tool + .tool {
-  padding-top: 5px;
+@include mobile {
+  @import './mobile'
+}
+@include tablet {
+  .menu { display: none; }
+}
+@include desktop {
+  .menu { display: none; }
 }

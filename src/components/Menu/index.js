@@ -7,17 +7,17 @@ import data from '../../content/menu.json'
 import config from '../../content/config.json'
 import actions from '../../redux/app/actions'
 
-import hamburgerIcon from '../../icons/hamburger.svg'
-import closeIcon from '../../icons/close.svg'
+import HamburgerIcon from '../../icons/hamburger.svg'
+import CloseIcon from '../../icons/close.svg'
 
 const Menu = ({ toggleMenuIsActive, app }) =>
   <div className={cx(styles.menu, { [styles.isActive]: app.menuIsActive })}>
-    <button onClick={() => toggleMenuIsActive(true)} className={styles.hamburger}>
-      <img src={hamburgerIcon} alt={'Menu'} />
-    </button>
-    <button onClick={() => toggleMenuIsActive(false)} className={styles.close}>
-      <img src={closeIcon} alt={'Close'} />
-    </button>
+    <a onClick={() => toggleMenuIsActive(true)} className={styles.hamburger}>
+      <HamburgerIcon />
+    </a>
+    <a onClick={() => toggleMenuIsActive(false)} className={styles.close}>
+      <CloseIcon />
+    </a>
     <div className={styles.container}>
       <Link className={styles.title} to="/">
         {config.title.join(' ')}

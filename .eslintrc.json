@@ -5,11 +5,15 @@
     "no-return-assign": ["error", "except-parens"],
     "no-underscore-dangle": "off",
     "no-warning-comments": "off",
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
     "react/prop-types": "off",
     "react/sort-comp": "off",
     "react/jsx-filename-extension": "off",
     "react/require-default-props": "off",
+    "react/no-array-index-key": "off",
     "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/media-has-caption": "off",
     "prettier/prettier": [
       "error",
       {

@@ -1,0 +1,110 @@
+.project {
+  width: 72vw;
+  margin-bottom: 5em;
+
+  .back {
+    display: none;
+  }
+
+  h3 {
+    font-size: 2em;
+    line-height: 1em;
+    margin: 0.3em 0 0.5em;
+
+    a, a:visited, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  ul {
+    margin: 1em 0 0.3em;
+
+    li {
+      margin-bottom: 0.8em;
+
+      .fact {
+        display: inline-block;
+        margin-left: 0.2em;
+      }
+    }
+  }
+
+  .links {
+    margin: 1em 0;
+  }
+
+  &.isDetailView {
+
+  }
+
+  &.isDetail {
+    margin-top: 32px;
+
+    .back {
+      display: block;
+      margin-bottom: 26px;
+    }
+
+    .thumb {
+      display: block;
+    }
+
+    .mobileThumb {
+      display: block;
+      opacity: 0;
+      height: 0;
+    }
+    .body {
+      opacity: 1;
+      height: auto;
+    }
+  }
+
+}
+.thumb {
+  .desktopThumb {
+    display: none;
+  }
+  .mobileThumb {
+    width: 100%;
+    border: 1px solid $border-color;
+    opacity: 1;
+    transition: opacity $transition-quick $ease;
+  }
+}
+.body {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all $transition-quick $ease;
+  line-height: 1.4em;
+
+  p {
+    margin-bottom: 1em;
+  }
+}
+.videoThumb {
+  @include center-both;
+  @include video-thumb;
+
+  margin: 2em 0;
+
+  &.desktop {
+    display: none;
+  }
+}
+.gallery {
+  margin: 1em 0;
+
+  &.desktop {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 1em 0;
+    border: 1px solid $border-color;
+  }
+}

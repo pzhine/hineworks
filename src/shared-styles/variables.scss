@@ -1,3 +1,6 @@
+$mobile-width: 480px;
+$desktop-width: 1024px;
+
 $content-width: 500px;
 $padding: 15px;
 
@@ -7,3 +10,8 @@ $body-font: 'Humanist777', sans-serif;
 $background-color: #ffffff;
 $link-color: #d1002d;
 $body-color: #333333;
+$border-color: #979797;
+
+$transition-quick: 300ms;
+$transition-super-quick: 50ms;
+$ease: ease-in-out;

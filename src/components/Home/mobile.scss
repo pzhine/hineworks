@@ -1,0 +1,18 @@
+.home {
+  .title, .intro {
+    margin-top: 80px;
+  }
+
+  .title {
+    font-family: $header-font;
+    font-size: 4em;
+  }
+
+  .intro {
+    margin-bottom: 80px;
+
+    .info {
+      margin-bottom: 1em;
+    }
+  }
+}

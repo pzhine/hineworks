@@ -1,15 +1,11 @@
 @import '../../shared-styles/index';
 
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  height: 100vh;
-
-  .title {
-    font-family: $header-font;
-    font-size: 4em;
-  }
+@include mobile {
+  @import './mobile'
+}
+@include tablet {
+  .menu { display: none; }
+}
+@include desktop {
+  .menu { display: none; }
 }
