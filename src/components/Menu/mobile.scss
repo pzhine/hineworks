@@ -4,15 +4,7 @@
   }
 
   .hamburger, .close {
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 6.5vw;
-    right: 6.5vw;
+    @include menu-control();
     z-index: 200;
   }
 

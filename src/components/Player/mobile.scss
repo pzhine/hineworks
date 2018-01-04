@@ -1,16 +1,43 @@
 .player {
-  display: flex;
-  width: 100%;
+  opacity: 0;
+  transition: opacity $transition-quick $ease;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
+  background: #000;
+  z-index: 500;
+  pointer-events: none;
+  @include center-both();
+  padding-top: 50px;
+
+  .title {
+    position: absolute;
+    height: 48px;
+    width: 227px;
+    color: $border-color;
+    font-size: 21px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 17px;
+    left: 20px;
+    align-items: flex-start;
+  }
 
   .closeButton {
-    position: absolute;
-    width: 30px;
-    height: 30px;
+    @include menu-control();
+  }
 
-    
+  &.isActive {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  video {
+    height: 83vh;
+    max-width: 90%;
+    background: #000;
   }
 }

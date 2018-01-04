@@ -11,7 +11,7 @@ export default ({ work, target, isDetail }) => {
   }
   return work.media[target].videos.map(vid => {
     const ext = target.match('mobile') || vid.match('mobile') ? 'png' : 'gif'
-    const src = `/player/${work.slug}/${vid}.mp4`
+    const src = `/on/${work.slug}/play/${vid}.mp4`
     return (
       <Link to={src} key={target + vid} className={cx(styles.videoThumb, styles[target])}>
         <div className={styles.playButton}>
