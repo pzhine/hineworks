@@ -17,7 +17,8 @@
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-svg-loader": "^2.1.0"
+    "react-svg-loader": "^2.1.0",
+    "uglifyjs-webpack-plugin": "^1.1.6"
   },
   "devDependencies": {
     "enzyme": "2.4.1",

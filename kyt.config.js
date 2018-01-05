@@ -1,5 +1,5 @@
-// Base kyt config.
-// Edit these properties to make changes.
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   reactHotLoader: true,
@@ -11,7 +11,28 @@ module.exports = {
 
     // Exclude inline.svg from url-loader
     const fileLoader = appConfig.module.rules.find(loader => loader.loader === 'file-loader')
-    fileLoader.exclude = /\.svg$/
+    if (fileLoader) {
+      // console.log('fileLoader', fileLoader)
+      fileLoader.exclude = /\.svg$/
+    }
+
+    appConfig.plugins = appConfig.plugins.map(
+      plugin =>
+        plugin instanceof webpack.optimize.UglifyJsPlugin
+          ? new UglifyJsPlugin({
+              uglifyOptions: {
+                compress: {
+                  ie8: false,
+                  warnings: false,
+                },
+                output: {
+                  comments: false,
+                },
+              },
+              sourceMap: true,
+            })
+          : plugin
+    )
 
     // Create a new loader to handle .svg files and pass the same options
     // as used for BabelLoader
