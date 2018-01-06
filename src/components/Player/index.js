@@ -11,7 +11,7 @@ const Player = ({ isActive, title, src, onClose }) =>
     <div className={styles.title}>
       {title}
     </div>
-    <video autoplay muted loop src={src} playsinline />
+    <video autoPlay muted loop src={src} playsInline />
   </div>
 
 export default Player
