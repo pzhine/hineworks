@@ -1,12 +1,12 @@
 .player {
   opacity: 0;
+  z-index: -1;
   transition: opacity $transition-quick $ease;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   background: #000;
-  z-index: 500;
   pointer-events: none;
   @include center-both();
   padding-top: 50px;
@@ -32,6 +32,7 @@
 
   &.isActive {
     opacity: 1;
+    z-index: 500;
     pointer-events: all;
   }
 
