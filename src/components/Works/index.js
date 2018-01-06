@@ -2,6 +2,7 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import cx from 'classnames'
+import LazyLoad from 'react-lazyload'
 import styles from './styles.scss'
 import works from '../../content/works.json'
 import Project from '../Project'
@@ -15,7 +16,9 @@ export default () =>
           {works.projects.map(
             project =>
               (!match || match.params.slug === project.slug) &&
-              <Project key={project.slug} slug={project.slug} match={match} />
+              <LazyLoad height={'100vh'} key={project.slug}>
+                <Project slug={project.slug} match={match} />
+              </LazyLoad>
           )}
         </div>}
     />
