@@ -2,10 +2,11 @@
   "title": ["Paul", "Hine"],
   "greeting": "Nice to see you",
   "intro": [
-    "I am a full-stack web engineer. Here are some projects I’ve worked on recently.",
+    "Web Engineer and<br />Interactive Media Developer.",
     "Have a look at <a href='http://hine.works/pzh-resume.pdf'>my resume</a>.",
     "Let's <a href='mailto:paul@hine.works'>be in touch</a>!"
   ],
   "cvUrl": "http://hine.works/pzh-resume.pdf",
-  "email": "paul@hine.works"
+  "email": "paul@hine.works",
+  "mediaUrl": "https://hineworks.nyc3.digitaloceanspaces.com/media"
 }

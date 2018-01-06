@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import cx from 'classnames'
+import config from '../../content/config.json'
 import styles from './styles.scss'
 
 import PlayIcon from '../../icons/play.svg'
@@ -19,7 +20,7 @@ export default ({ work, target, isDetail }) => {
         </div>
         <div className={styles.thumb}>
           <img
-            src={require(`../../public/media/${work.slug}/${vid}-thumb.${ext}`)}
+            src={`${config.mediaUrl}/${work.slug}/${vid}-thumb.${ext}`}
             alt={`${target} video thumb`}
           />
         </div>

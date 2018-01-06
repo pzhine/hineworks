@@ -1,5 +1,6 @@
 import React from 'react'
 import cx from 'classnames'
+import config from '../../content/config.json'
 import styles from './styles.scss'
 
 export default ({ work, target, isDetail }) => {
@@ -12,7 +13,7 @@ export default ({ work, target, isDetail }) => {
         return (
           <img
             key={target + src}
-            src={require(`../../public/media/${work.slug}/${src}.${ext}`)}
+            src={`${config.mediaUrl}/${work.slug}/${src}.${ext}`}
             alt={'gallery thumbnail'}
           />
         )

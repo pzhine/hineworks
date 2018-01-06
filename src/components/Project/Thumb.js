@@ -1,21 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import config from '../../content/config.json'
 import styles from './styles.scss'
 
 export default ({ work }) =>
   <Link to={`/on/${work.slug}`} className={styles.thumb}>
-    {work.media.mobile.index.map((src, idx) => [
+    {work.media.mobile.index.map(src =>
       <img
-        key={idx}
+        key={`mobile-${src}`}
         className={styles.mobileThumb}
-        src={require(`../../public/media/${work.slug}/${src}.png`)}
+        src={`${config.mediaUrl}/${work.slug}/${src}.png`}
         alt={'mobile thumbnail'}
-      />,
+      />
+    )}
+    {work.media.desktop.index.map(src =>
       <img
-        key={idx}
+        key={`mobile-${src}`}
         className={styles.desktopThumb}
-        src={require(`../../public/media/${work.slug}/${src}.png`)}
-        alt={'desktop thumbnail'}
-      />,
-    ])}
+        src={`${config.mediaUrl}/${work.slug}/${src}.png`}
+        alt={'mobile thumbnail'}
+      />
+    )}
   </Link>

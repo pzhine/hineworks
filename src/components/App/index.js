@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import store from '../../redux/configureStore'
 import styles from './styles.scss'
 import works from '../../content/works.json'
+import config from '../../content/config.json'
 
 import RouteMonitor from '../RouteMonitor'
 import Home from '../Home'
@@ -21,7 +22,7 @@ const App = () =>
           children={({ match, history }) =>
             <Player
               isActive={Boolean(match)}
-              src={match && `/media/${match.params.slug}/${match.params.media}`}
+              src={match && `${config.mediaUrl}/${match.params.slug}/${match.params.media}`}
               title={match && works.projects.find(w => w.slug === match.params.slug).title}
               onClose={() => history.goBack()}
             />}
