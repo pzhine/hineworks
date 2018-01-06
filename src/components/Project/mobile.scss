@@ -87,7 +87,8 @@
 .videoThumb {
   @include center-both;
   @include video-thumb;
-
+  min-height: 165px;
+  background: #000;
   margin: 2em 0;
 
   &.desktop {

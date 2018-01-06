@@ -8,7 +8,7 @@ class Player extends PureComponent {
     super(props)
     this.videoElem = null
     this.state = {
-      loadProgress: 0,
+      loadProgress: 5,
       canPlayThrough: false,
     }
   }
@@ -27,9 +27,10 @@ class Player extends PureComponent {
       return
     }
     const endBuf = this.videoElem.buffered.end(0)
+    const canPlayThrough = this.videoElem.readyState === 4
     this.setState({
-      loadProgress: parseInt(endBuf / this.videoElem.duration * 100, 10),
-      canPlayThrough: this.videoElem.readyState === 4,
+      loadProgress: canPlayThrough ? 5 : parseInt(endBuf / this.videoElem.duration * 100, 10),
+      canPlayThrough,
     })
   }
   render() {
