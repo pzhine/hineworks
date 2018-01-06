@@ -36,9 +36,37 @@
     pointer-events: all;
   }
 
-  video {
+  .videoContainer {
+    @include center-both()
     height: 83vh;
-    max-width: 90%;
-    background: #000;
+
+    video, p {
+      position: absolute;
+      transition: opacity $transition-quick $ease;
+    }
+
+    video {
+      height: 83vh;
+      max-width: 90%;
+      background: #000;
+      opacity: 0;
+    }
+
+    p {
+      opacity: 1;
+      color: $border-color;
+    }
+
+    &.isLoaded {
+      p {
+        opacity: 0;
+      }
+      video {
+        opacity: 1;
+      }
+    }
+
   }
+
+
 }
