@@ -19,10 +19,17 @@ export default ({ work, target, isDetail }) => {
           <PlayIcon />
         </div>
         <div className={styles.thumb}>
-          <img
-            src={`${config.mediaUrl}/${work.slug}/${vid}-thumb.${ext}`}
-            alt={`${target} video thumb`}
-          />
+          <picture>
+            <source
+              srcSet={`${config.mediaUrl}/${work.slug}/${vid}-thumb.${ext}`}
+              media={
+                target.match('mobile')
+                  ? `(max-width: ${config.breakpoints.desktop}px)`
+                  : `(min-width: ${config.breakpoints.desktop + 1}px)`
+              }
+            />
+            <img src="/favicon.png" alt={`${target} video thumb`} />
+          </picture>
         </div>
       </Link>
     )

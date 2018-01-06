@@ -8,5 +8,8 @@
   ],
   "cvUrl": "http://hine.works/pzh-resume.pdf",
   "email": "paul@hine.works",
-  "mediaUrl": "https://hineworks.nyc3.digitaloceanspaces.com/media"
+  "mediaUrl": "https://hineworks.nyc3.digitaloceanspaces.com/media",
+  "breakpoints": {
+    "desktop": 1024
+  }
 }

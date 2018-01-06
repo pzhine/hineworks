@@ -50,11 +50,13 @@ const Project = ({ match, slug }) => {
       </h3>
       <Thumb work={work} />
       <Summary work={work} isDetail={isDetail} />
-      <VideoThumbs target={'mobile'} work={work} isDetail={isDetail} />
-      <VideoThumbs target={'desktop'} work={work} isDetail={isDetail} />
-      <Body work={work} isDetail={isDetail} />
-      <Gallery target={'mobile'} work={work} isDetail={isDetail} />
-      <Gallery target={'desktop'} work={work} isDetail={isDetail} />
+      {isDetail && [
+        <VideoThumbs target={'mobile'} work={work} isDetail={isDetail} key={'vtm'} />,
+        <VideoThumbs target={'desktop'} work={work} isDetail={isDetail} key={'vtd'} />,
+        <Body work={work} isDetail={isDetail} />,
+        <Gallery target={'mobile'} work={work} isDetail={isDetail} />,
+        <Gallery target={'desktop'} work={work} isDetail={isDetail} />,
+      ]}
     </article>
   )
 }

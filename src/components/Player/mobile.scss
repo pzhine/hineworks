@@ -39,6 +39,7 @@
   .videoContainer {
     @include center-both()
     height: 83vh;
+    position: relative;
 
     video, p {
       position: absolute;
@@ -50,17 +51,16 @@
       max-width: 90%;
       background: #000;
       opacity: 0;
+      z-index: 10;
     }
 
     p {
       opacity: 1;
       color: $border-color;
+      z-index: 5;
     }
 
     &.isLoaded {
-      p {
-        opacity: 0;
-      }
       video {
         opacity: 1;
       }
