@@ -3,10 +3,12 @@ import cx from 'classnames'
 import config from '../../content/config.json'
 import styles from './styles.scss'
 
-export default ({ work, target, isDetail }) => {
-  const images = [...(work.media[target].screens || []), ...(work.media[target].photos || [])]
+export default ({ work, target }) => {
+  const images = [
+    ...(work.media[target].screens || []),
+    ...(work.media[target].photos || []),
+  ]
   return (
-    isDetail &&
     <div className={cx(styles.gallery, styles[target])}>
       {images.map(src => {
         const ext = src.match('photo') ? 'jpg' : 'png'

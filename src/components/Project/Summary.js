@@ -8,7 +8,9 @@ export default ({ work, isDetail }) =>
     <ul className={styles.info}>
       {work.info.map(entry =>
         <li key={entry[0]}>
-          <em>{entry[0]}</em>:
+          <em>
+            {entry[0]}:
+          </em>
           <Block className={styles.fact} html={entry[1]} />
         </li>
       )}

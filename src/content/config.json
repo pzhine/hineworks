@@ -3,13 +3,15 @@
   "greeting": "Nice to see you",
   "intro": [
     "Web Engineer and<br />Interactive Media Developer.",
-    "Have a look at <a href='http://hine.works/pzh-resume.pdf'>my resume</a>.",
-    "Let's <a href='mailto:paul@hine.works'>be in touch</a>!"
+    "Have a look at my <a href='http://hine.works/pzh-resume.pdf'>resume</a>.",
+    "Let's be in <a href='mailto:paul@hine.works'>touch</a>!"
   ],
   "cvUrl": "http://hine.works/pzh-resume.pdf",
+  "linkedInUrl": "https://linkedin.com/in/pzhine",
+  "githubUrl": "https://github.com/pzhine",
   "email": "paul@hine.works",
   "mediaUrl": "https://hineworks.nyc3.digitaloceanspaces.com/media",
   "breakpoints": {
-    "desktop": 1024
+    "desktop": 768
   }
 }

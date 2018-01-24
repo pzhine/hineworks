@@ -17,8 +17,12 @@
     }
   }
 
-  ul {
+  .summary {
     margin: 1em 0 0.3em;
+    
+    em {
+      font-family: $thin-font;
+    }
 
     li {
       margin-bottom: 0.8em;
@@ -48,13 +52,11 @@
 
     .thumb {
       display: block;
-    }
-
-    .mobileThumb {
-      display: block;
       opacity: 0;
       height: 0;
+      pointer-events: none;
     }
+
     .body {
       opacity: 1;
       height: auto;
@@ -63,10 +65,16 @@
 
 }
 .thumb {
-  .desktopThumb {
-    display: none;
+  display: block;
+
+  &.twoRows {
+    img {
+      min-height: 160px;
+    }
   }
-  .mobileThumb {
+
+  img {
+    min-height: 470px;
     width: 100%;
     border: 1px solid $border-color;
     opacity: 1;
@@ -90,10 +98,6 @@
   min-height: 165px;
   background: #000;
   margin: 2em 0;
-
-  &.desktop {
-    display: none;
-  }
 }
 .gallery {
   margin: 1em 0;

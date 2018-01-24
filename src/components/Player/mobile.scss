@@ -41,7 +41,7 @@
     height: 83vh;
     position: relative;
 
-    video, p {
+    video, svg {
       position: absolute;
       transition: opacity $transition-quick $ease;
     }
@@ -50,19 +50,21 @@
       height: 83vh;
       max-width: 90%;
       background: transparent;
-      opacity: 0;
-      z-index: 10;
+      opacity: 0.8;
+      z-index: 5;
     }
 
-    p {
+    svg {
       opacity: 1;
-      color: $border-color;
-      z-index: 5;
+      z-index: 10;
     }
 
     &.isLoaded {
       video {
         opacity: 1;
+      }
+      svg {
+        opacity: 0;
       }
     }
 

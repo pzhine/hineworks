@@ -2,10 +2,12 @@
 /* eslint-disable react/no-danger */
 
 import React from 'react'
+import { Block } from '../Raw'
 import styles from './styles.scss'
 
-export default ({ work, isDetail }) =>
-  isDetail &&
+export default ({ work }) =>
   <div className={styles.body}>
-    {work.body.map((html, idx) => <p key={idx} dangerouslySetInnerHTML={{ __html: html }} />)}
+    {work.body.map((html, idx) =>
+      <Block key={idx} html={html} component="p" />
+    )}
   </div>

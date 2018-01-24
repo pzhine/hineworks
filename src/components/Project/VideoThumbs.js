@@ -1,37 +1,46 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import cx from 'classnames'
+import MediaQuery from 'react-responsive'
 import config from '../../content/config.json'
 import styles from './styles.scss'
 
 import PlayIcon from '../../icons/play.svg'
 
-export default ({ work, target, isDetail }) => {
-  if (!isDetail) {
-    return null
-  }
-  return work.media[target].videos.map(vid => {
-    const ext = target.match('mobile') || vid.match('mobile') ? 'png' : 'gif'
-    const src = `/on/${work.slug}/play/${vid}.mp4`
-    return (
-      <Link to={src} key={target + vid} className={cx(styles.videoThumb, styles[target])}>
-        <div className={styles.playButton}>
-          <PlayIcon />
-        </div>
-        <div className={styles.thumb}>
-          <picture>
-            <source
-              srcSet={`${config.mediaUrl}/${work.slug}/${vid}-thumb.${ext}`}
-              media={
-                target.match('mobile')
-                  ? `(max-width: ${config.breakpoints.desktop}px)`
-                  : `(min-width: ${config.breakpoints.desktop + 1}px)`
-              }
+export default ({ work, target }) => {
+  const { desktop } = config.breakpoints
+  const mq = target.match('mobile')
+    ? { maxWidth: desktop - 1 }
+    : { minWidth: desktop }
+  return (
+    <MediaQuery
+      {...mq}
+      className={cx(styles.videoThumbs, styles[target])}
+      component="div"
+    >
+      {work.media[target].videos.map(vid => {
+        const ext =
+          target.match('mobile') || vid.match('mobile') ? 'png' : 'gif'
+        const src = `/on/${work.slug}/play/${vid}.mp4`
+        return (
+          <Link
+            to={src}
+            className={cx(
+              styles.videoThumb,
+              styles[vid.match('mobile') ? 'mobile' : 'desktop']
+            )}
+            key={target + vid}
+          >
+            <div className={styles.playButton}>
+              <PlayIcon />
+            </div>
+            <img
+              src={`${config.mediaUrl}/${work.slug}/${vid}-thumb.${ext}`}
+              alt={`${target} video thumb`}
             />
-            <img src="/favicon.png" alt={`${target} video thumb`} />
-          </picture>
-        </div>
-      </Link>
-    )
-  })
+          </Link>
+        )
+      })}
+    </MediaQuery>
+  )
 }

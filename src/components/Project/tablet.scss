@@ -1,0 +1,53 @@
+.project {
+  h3 {
+    width: 250px;
+    font-size: 36px;
+  }
+  .thumb {
+    &.desktop {
+      display: block;
+    }
+    &.mobile {
+      display: none;
+    }
+
+    img {
+      min-height: 320px;
+    }
+  }
+
+  &.isDetail {
+    margin: 90px auto;
+    max-width: 415px;
+
+    .back {
+      position: absolute;
+      top: 37px;
+      left: 33px;
+    }
+  }
+
+  .videoThumbs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 415px;
+    margin: 2em 0 3.5em 0;
+
+    .videoThumb {
+      margin: 0.5em 1em 0.5em 0;
+      border: 1px solid $border-color;
+
+      &.desktop {
+        flex-basis: 65%;
+      }
+
+      &.mobile {
+        flex-basis: 25%
+      }
+    }
+  }
+
+  .body {
+    margin-bottom: 4em;
+  }
+}

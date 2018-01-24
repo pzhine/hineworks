@@ -25,7 +25,7 @@
         },
         "desktop": {
           "index": ["index-desktop"],
-          "videos": ["video1-desktop", "video2-desktop", "video2-mobile", "video3-mobile"],
+          "videos": ["video1-desktop", "video2-mobile", "video2-desktop", "video3-mobile"],
           "photos": ["photo1", "photo2", "photo3"]
         }
       }

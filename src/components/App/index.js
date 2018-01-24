@@ -10,6 +10,7 @@ import RouteMonitor from '../RouteMonitor'
 import Home from '../Home'
 import Works from '../Works'
 import Menu from '../Menu'
+import Nav from '../Nav'
 import Player from '../Player'
 
 const App = () =>
@@ -17,6 +18,7 @@ const App = () =>
     <RouteMonitor>
       <main className={styles.app}>
         <Menu />
+        <Nav />
         <Route
           path="/on/:slug/play/:media"
           children={({ match, history }) =>

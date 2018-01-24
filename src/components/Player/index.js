@@ -1,35 +1,46 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import cx from 'classnames'
+import _ from 'lodash'
 import styles from './styles.scss'
 import CloseIcon from '../../icons/close.svg'
+import LoadingIcon from '../../icons/loading.svg'
+import Video from './Video'
 
-class Player extends PureComponent {
+class Player extends Component {
   constructor(props) {
     super(props)
     this.videoElem = null
     this.state = {
-      loadProgress: 5,
+      loadProgress: 0,
       canPlayThrough: false,
     }
+    this.updateLoadProgress = _.debounce(
+      this.updateLoadProgress.bind(this),
+      1000,
+      {
+        leading: false,
+        trailing: true,
+      }
+    )
   }
-  bindVideo(e) {
-    this.videoElem = e
-  }
-  playPause() {
-    if (this.videoElem.paused) {
-      this.videoElem.play()
-    } else {
-      this.videoElem.pause()
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.src !== this.props.src) {
+      this.setState({
+        canPlayThrough: false,
+      })
     }
   }
-  updateLoadProgress() {
-    if (this.videoElem.readyState === 0) {
+  updateLoadProgress(videoElem) {
+    if (!videoElem) {
       return
     }
-    const endBuf = this.videoElem.buffered.end(0)
-    const canPlayThrough = this.videoElem.readyState === 4
+    const canPlayThrough = videoElem.readyState > 3
+    if (canPlayThrough) {
+      videoElem.play()
+    } else {
+      videoElem.pause()
+    }
     this.setState({
-      loadProgress: canPlayThrough ? 5 : parseInt(endBuf / this.videoElem.duration * 100, 10),
       canPlayThrough,
     })
   }
@@ -44,22 +55,14 @@ class Player extends PureComponent {
           {title}
         </div>
         <div
-          className={cx(styles.videoContainer, { [styles.isLoaded]: this.state.canPlayThrough })}
+          className={cx(styles.videoContainer, {
+            [styles.isLoaded]: this.state.canPlayThrough,
+          })}
         >
-          <p>
-            {this.state.loadProgress}%
-          </p>
-          <video
+          <LoadingIcon />
+          <Video
             src={src}
-            autoPlay
-            muted
-            loop
-            playsInline
-            ref={e => this.bindVideo(e)}
-            onClick={() => this.playPause()}
-            onProgress={() => this.updateLoadProgress()}
-            onLoadStart={() => this.updateLoadProgress()}
-            onCanPlay={() => this.updateLoadProgress()}
+            onReadyStateChange={v => this.updateLoadProgress(v)}
           />
         </div>
       </div>

@@ -48,14 +48,17 @@ const Project = ({ match, slug }) => {
           {work.title}
         </Link>
       </h3>
-      <Thumb work={work} />
+      <Link to={`/on/${work.slug}`}>
+        <Thumb work={work} target={'mobile'} key={'tm'} />
+        <Thumb work={work} target={'desktop'} key={'td'} />
+      </Link>
       <Summary work={work} isDetail={isDetail} />
       {isDetail && [
-        <VideoThumbs target={'mobile'} work={work} isDetail={isDetail} key={'vtm'} />,
-        <VideoThumbs target={'desktop'} work={work} isDetail={isDetail} key={'vtd'} />,
-        <Body work={work} isDetail={isDetail} />,
-        <Gallery target={'mobile'} work={work} isDetail={isDetail} />,
-        <Gallery target={'desktop'} work={work} isDetail={isDetail} />,
+        <VideoThumbs target={'mobile'} work={work} key={'vtm'} />,
+        <VideoThumbs target={'desktop'} work={work} key={'vtd'} />,
+        <Body work={work} key={'body'} />,
+        <Gallery target={'mobile'} work={work} key={'gm'} />,
+        <Gallery target={'desktop'} work={work} key={'gd'} />,
       ]}
     </article>
   )
