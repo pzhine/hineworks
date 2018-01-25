@@ -7,14 +7,13 @@ import config from '../../content/config.json'
 import styles from './styles.scss'
 
 export default ({ work, target }) => {
-  const { desktop } = config.breakpoints
+  const { tablet } = config.breakpoints
   const mq = target.match('mobile')
-    ? { maxWidth: desktop - 1 }
-    : { minWidth: desktop }
+    ? { maxWidth: tablet - 1 }
+    : { minWidth: tablet }
   return (
     <MediaQuery {...mq}>
-      <Link
-        to={`/on/${work.slug}`}
+      <div
         className={cx(styles.thumb, styles[target], {
           [styles.twoRows]: work.media[target].index.length === 2,
         })}
@@ -27,7 +26,7 @@ export default ({ work, target }) => {
             />
           </LazyLoad>
         )}
-      </Link>
+      </div>
     </MediaQuery>
   )
 }

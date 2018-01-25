@@ -8,5 +8,7 @@
   @import './tablet';
 }
 @include desktop {
-  .menu { display: none; }
+  @import './mobile';
+  @import './tablet';
+  @import './desktop';
 }

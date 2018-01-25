@@ -12,6 +12,7 @@
   "email": "paul@hine.works",
   "mediaUrl": "https://hineworks.nyc3.digitaloceanspaces.com/media",
   "breakpoints": {
-    "desktop": 768
+    "desktop": 768,
+    "tablet": 480
   }
 }
