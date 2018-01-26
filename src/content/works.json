@@ -69,7 +69,7 @@
         ["Media", "Kiosk"]
       ],
       "links": [
-        ["View Demo", "http://static.hine.works/demos/himms", true]
+        ["View Demo", "http://static.hine.works/demos/ibmhimss", true]
       ],
       "media": {
         "mobile": {
@@ -98,7 +98,7 @@
         ["Media", "Desktop, Mobile"]
       ],
       "links": [
-        ["View Demo", "http://static.hine.works/demos/ikea", true]
+        ["View Demo", "http://static.hine.works/demos/ikeagrams", true]
       ],
       "media": {
         "mobile": {
@@ -127,7 +127,7 @@
         ["Media", "Desktop, Mobile"]
       ],
       "links": [
-        ["View Demo", "http://static.hine.works/demos/gerber", true]
+        ["View Demo", "http://static.hine.works/demos/gerbermicro", true]
       ],
       "media": {
         "mobile": {
