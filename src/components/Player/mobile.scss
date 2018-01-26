@@ -41,17 +41,20 @@
     height: 83vh;
     position: relative;
 
-    video, svg {
+    video, svg, img {
       position: absolute;
       transition: opacity $transition-quick $ease;
     }
 
-    video {
+    video, img {
       height: 83vh;
       max-width: 90%;
       background: transparent;
-      opacity: 0.8;
       z-index: 5;
+    }
+
+    video {
+      opacity: 0.8;
     }
 
     svg {

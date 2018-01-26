@@ -29,11 +29,15 @@
     }
   }
 
+  .summary {
+    margin-bottom: 2em;
+  }
+
   .videoThumbs {
     display: flex;
     flex-wrap: wrap;
     max-width: 415px;
-    margin: 2em 0 3.5em 0;
+    margin: 2em 0;
 
     .videoThumb {
       margin: 0.5em 1em 0.5em 0;
@@ -52,5 +56,17 @@
 
   .body {
     margin-bottom: 4em;
+  }
+
+  .gallery {
+    .desktop {
+      display: block;
+    }
+
+    .mobile {
+      display: inline-block;
+      width: 37%;
+      margin-right: 1.5em;
+    }
   }
 }

@@ -10,9 +10,23 @@ import actions from '../../redux/app/actions'
 import HamburgerIcon from '../../icons/hamburger.svg'
 import CloseIcon from '../../icons/close.svg'
 
+const onClick = ({ e, toggleMenuIsActive }) => {
+  const { target } = e
+  if (target.tagName.toLowerCase() === 'a' && target.id !== 'hamburger') {
+    toggleMenuIsActive(false)
+  }
+}
+
 const Menu = ({ toggleMenuIsActive, app }) =>
-  <div className={cx(styles.menu, { [styles.isActive]: app.menuIsActive })}>
-    <a onClick={() => toggleMenuIsActive(true)} className={styles.hamburger}>
+  <div
+    className={cx(styles.menu, { [styles.isActive]: app.menuIsActive })}
+    onClick={e => onClick({ e, toggleMenuIsActive })}
+  >
+    <a
+      onClick={() => toggleMenuIsActive(true)}
+      id="hamburger"
+      className={styles.hamburger}
+    >
       <HamburgerIcon />
     </a>
     <a onClick={() => toggleMenuIsActive(false)} className={styles.close}>
@@ -22,7 +36,11 @@ const Menu = ({ toggleMenuIsActive, app }) =>
       <Link className={styles.title} to="/">
         {config.title.join(' ')}
       </Link>
-      <a className={styles.email} target="_blank" href={`mailto:${config.email}`}>
+      <a
+        className={styles.email}
+        target="_blank"
+        href={`mailto:${config.email}`}
+      >
         {config.email}
       </a>
       {data.map(

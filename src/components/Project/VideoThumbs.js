@@ -21,10 +21,9 @@ export default ({ work, target }) => {
       {work.media[target].videos.map(vid => {
         const ext =
           target.match('mobile') || vid.match('mobile') ? 'png' : 'gif'
-        const src = `/on/${work.slug}/play/${vid}.mp4`
         return (
           <Link
-            to={src}
+            to={`/on/${work.slug}/play/${vid}.mp4`}
             className={cx(
               styles.videoThumb,
               styles[vid.match('mobile') ? 'mobile' : 'desktop']

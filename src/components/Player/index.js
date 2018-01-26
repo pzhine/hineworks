@@ -5,6 +5,7 @@ import styles from './styles.scss'
 import CloseIcon from '../../icons/close.svg'
 import LoadingIcon from '../../icons/loading.svg'
 import Video from './Video'
+import lockScroll from '../../hoc/lockScroll'
 
 class Player extends Component {
   constructor(props) {
@@ -59,15 +60,19 @@ class Player extends Component {
             [styles.isLoaded]: this.state.canPlayThrough,
           })}
         >
-          <LoadingIcon />
-          <Video
-            src={src}
-            onReadyStateChange={v => this.updateLoadProgress(v)}
-          />
+          {src && src.match('.mp4')
+            ? [
+                <LoadingIcon />,
+                <Video
+                  src={src}
+                  onReadyStateChange={v => this.updateLoadProgress(v)}
+                />,
+              ]
+            : <img src={src} alt={`${title} detail`} />}
         </div>
       </div>
     )
   }
 }
 
-export default Player
+export default lockScroll({ lockWhen: props => props.isActive })(Player)

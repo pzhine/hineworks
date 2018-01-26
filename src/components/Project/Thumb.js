@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import cx from 'classnames'
 import LazyLoad from 'react-lazyload'
 import MediaQuery from 'react-responsive'

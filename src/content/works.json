@@ -15,7 +15,7 @@
         "I was tasked with adapting the Javascript codebase for photobooths at the US Open as well as building a play-at-home version for web and mobile web."
       ],
       "links": [
-        ["Visit Site", "http://watsonportraits.ibm.com"]
+        ["View Demo", "http://static.hine.works/demos/portraits", true]
       ],
       "media": {
         "mobile": {

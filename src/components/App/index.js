@@ -6,7 +6,7 @@ import styles from './styles.scss'
 import works from '../../content/works.json'
 import config from '../../content/config.json'
 
-import RouteMonitor from '../RouteMonitor'
+import ScrollManager from '../ScrollManager'
 import Home from '../Home'
 import Works from '../Works'
 import Menu from '../Menu'
@@ -15,7 +15,7 @@ import Player from '../Player'
 
 const App = () =>
   <Provider store={store}>
-    <RouteMonitor>
+    <ScrollManager>
       <main className={styles.app}>
         <Menu />
         <Nav />
@@ -24,8 +24,14 @@ const App = () =>
           children={({ match, history }) =>
             <Player
               isActive={Boolean(match)}
-              src={match && `${config.mediaUrl}/${match.params.slug}/${match.params.media}`}
-              title={match && works.projects.find(w => w.slug === match.params.slug).title}
+              src={
+                match &&
+                `${config.mediaUrl}/${match.params.slug}/${match.params.media}`
+              }
+              title={
+                match &&
+                works.projects.find(w => w.slug === match.params.slug).title
+              }
               onClose={() => history.goBack()}
             />}
         />
@@ -34,7 +40,7 @@ const App = () =>
           <Works />
         </div>
       </main>
-    </RouteMonitor>
+    </ScrollManager>
   </Provider>
 
 export default App

@@ -7,14 +7,9 @@ import { Block } from '../Raw'
 const Intro = () =>
   <section className={styles.intro}>
     {config.intro.map((html, idx) =>
-      <MediaQuery minWidth={config.breakpoints.desktop}>
+      <MediaQuery minWidth={config.breakpoints.desktop} key={idx}>
         {isDesktop =>
-          <Block
-            key={idx}
-            className={styles.info}
-            html={html}
-            brToSpace={isDesktop}
-          />}
+          <Block className={styles.info} html={html} brToSpace={isDesktop} />}
       </MediaQuery>
     )}
   </section>

@@ -29,16 +29,16 @@
 @mixin video-thumb {
   width: 100%;
 
-  .thumb {
-    filter: brightness(0.5);
+  img {
+    filter: brightness(0.8);
     transition: filter $transition-super-quick $ease;
   }
 
   &:active {
-    .thumb {
-      filter:brightness(0.2);
+    img {
+      filter:brightness(0.5);
     }
-    button {
+    .playButton {
       transform: scale(0.9);
     }
   }

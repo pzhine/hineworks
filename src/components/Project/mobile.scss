@@ -19,7 +19,7 @@
 
   .summary {
     margin: 1em 0 0.3em;
-    
+
     em {
       font-family: $thin-font;
     }
@@ -101,10 +101,6 @@
 }
 .gallery {
   margin: 1em 0;
-
-  &.desktop {
-    display: none;
-  }
 
   img {
     width: 100%;
