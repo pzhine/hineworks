@@ -66,19 +66,15 @@
 }
 .thumb {
   display: block;
+  border: 1px solid $border-color;
+  background-size: cover;
+  background-position: top center;
+  width: 270px;
+  height: 420px;
 
   &.twoRows {
-    img {
-      min-height: 160px;
-    }
-  }
-
-  img {
-    min-height: 470px;
-    width: 100%;
-    border: 1px solid $border-color;
-    opacity: 1;
-    transition: opacity $transition-quick $ease;
+    height: 170px;
+    margin-bottom: 0.5em;
   }
 }
 .body {
@@ -95,9 +91,11 @@
 .videoThumb {
   @include center-both;
   @include video-thumb;
-  min-height: 165px;
   background: #000;
   margin: 2em 0;
+  height: 165px;
+  width: 270px;
+  overflow: hidden;
 }
 .gallery {
   margin: 1em 0;

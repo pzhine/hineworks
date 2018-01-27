@@ -46,14 +46,15 @@ const Project = ({ match, slug }) => {
       <Link className={styles.back} to={'/'}>
         <BackIcon />
       </Link>
-      <div className={styles.indexContainer}>
-        <MediaQuery component="h3" maxWidth={desktop - 1}>
-          <Link to={`/on/${work.slug}`}>
-            {work.title}
-          </Link>
-        </MediaQuery>
-        <MediaQuery minWidth={desktop}>
-          {isDesktop =>
+      <MediaQuery minWidth={desktop + 1}>
+        {isDesktop =>
+          <div className={styles.indexContainer}>
+            {!isDesktop &&
+              <h3>
+                <Link to={`/on/${work.slug}`}>
+                  {work.title}
+                </Link>
+              </h3>}
             <div className={styles.indexRow}>
               {(!isDesktop || !isDetail) &&
                 <Link to={`/on/${work.slug}`}>
@@ -61,27 +62,28 @@ const Project = ({ match, slug }) => {
                   <Thumb work={work} target={'desktop'} key={'td'} />
                 </Link>}
               <div className={styles.summaryContainer}>
-                <h3>
-                  <Link to={`/on/${work.slug}`}>
-                    {work.title}
-                  </Link>
-                </h3>
+                {isDesktop &&
+                  <h3>
+                    <Link to={`/on/${work.slug}`}>
+                      {work.title}
+                    </Link>
+                  </h3>}
                 {(!isDesktop || !isDetail) &&
                   <Summary work={work} isDetail={isDetail} />}
                 {isDesktop &&
                   isDetail &&
                   <VideoThumbs target={'desktop'} work={work} key={'vtd'} />}
               </div>
-            </div>}
-        </MediaQuery>
-      </div>
+            </div>
+          </div>}
+      </MediaQuery>
       {isDetail &&
         <div className={styles.detailContainer}>
-          <MediaQuery maxWidth={desktop - 1}>
+          <MediaQuery maxWidth={desktop}>
             <VideoThumbs target={'mobile'} work={work} key={'vtm'} />
             <VideoThumbs target={'desktop'} work={work} key={'vtd'} />
           </MediaQuery>
-          <MediaQuery minWidth={desktop}>
+          <MediaQuery minWidth={desktop + 1}>
             <Summary work={work} isDetail />
           </MediaQuery>
           <Body work={work} key={'body'} />

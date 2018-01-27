@@ -23,6 +23,12 @@
     margin-top: 3em;
   }
 
+  .thumb {
+    width: 504px;
+    height: 324px;
+    overflow: hidden;
+  }
+
   &.isDetail {
     display: flex;
     max-width: 100%;

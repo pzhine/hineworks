@@ -22,7 +22,7 @@ export default ({ work, isDetail }) =>
         </li>}
       {work.links.map(link =>
         <li key={link[1]}>
-          <a href={link[1]} target="_blank">
+          <a href={link[1]} target="_blank" rel="nofollow">
             {link[0]}
           </a>
         </li>

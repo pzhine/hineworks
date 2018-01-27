@@ -12,20 +12,18 @@ export default ({ work, target }) => {
     : { minWidth: tablet }
   return (
     <MediaQuery {...mq}>
-      <div
-        className={cx(styles.thumb, styles[target], {
-          [styles.twoRows]: work.media[target].index.length === 2,
-        })}
-      >
-        {work.media[target].index.map(src =>
-          <LazyLoad key={src}>
-            <img
-              src={`${config.mediaUrl}/${work.slug}/${src}.png`}
-              alt={`${target} thumb`}
-            />
-          </LazyLoad>
-        )}
-      </div>
+      {work.media[target].index.map(src =>
+        <LazyLoad key={src}>
+          <div
+            style={{
+              backgroundImage: `url('${config.mediaUrl}/${work.slug}/${src}.png')`,
+            }}
+            className={cx(styles.thumb, styles[target], {
+              [styles.twoRows]: work.media[target].index.length === 2,
+            })}
+          />
+        </LazyLoad>
+      )}
     </MediaQuery>
   )
 }

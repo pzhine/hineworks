@@ -6,15 +6,15 @@
     font-size: 36px;
   }
   .thumb {
+    width: 568px;
+    height: 356px;
+    overflow: hidden;
+
     &.desktop {
       display: block;
     }
     &.mobile {
       display: none;
-    }
-
-    img {
-      min-height: 320px;
     }
   }
 
@@ -42,14 +42,13 @@
     .videoThumb {
       margin: 0.5em 1em 0.5em 0;
       border: 1px solid $border-color;
-      width: 100%;
 
       &.desktop {
-        flex-basis: 65%;
+        width: 268px;
       }
 
       &.mobile {
-        flex-basis: 25%
+        width: 102px;
       }
     }
   }
