@@ -40,6 +40,7 @@ server.get('*', (req, res) => {
         root: html,
         title: config.siteTitle,
         description: config.siteDescription,
+        googleTrackingId: config.googleTrackingId,
         manifestJSBundle: clientAssets['manifest.js'],
         mainJSBundle: clientAssets['main.js'],
         vendorJSBundle: clientAssets['vendor.js'],

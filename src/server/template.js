@@ -25,6 +25,16 @@ export default vo => `
       : ''}
 
     <title>${vo.title}</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${vo.googleTrackingId}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '${vo.googleTrackingId}');
+    </script>
+
+
   </head>
 
   <body>
