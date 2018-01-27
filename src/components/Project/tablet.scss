@@ -4,18 +4,12 @@
   h3 {
     width: 250px;
     font-size: 36px;
+    max-width: 100%;
   }
   .thumb {
     width: 568px;
     height: 356px;
     overflow: hidden;
-
-    &.desktop {
-      display: block;
-    }
-    &.mobile {
-      display: none;
-    }
   }
 
   &.isDetail {

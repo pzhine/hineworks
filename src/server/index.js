@@ -6,6 +6,7 @@ import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import template from './template'
+import config from '../content/config.json'
 import App from '../components/App'
 
 const clientAssets = require(KYT.ASSETS_MANIFEST) // eslint-disable-line import/no-dynamic-require
@@ -37,6 +38,8 @@ server.get('*', (req, res) => {
     res.status(200).send(
       template({
         root: html,
+        title: config.siteTitle,
+        description: config.siteDescription,
         manifestJSBundle: clientAssets['manifest.js'],
         mainJSBundle: clientAssets['main.js'],
         vendorJSBundle: clientAssets['vendor.js'],

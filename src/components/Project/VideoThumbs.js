@@ -8,10 +8,10 @@ import styles from './styles.scss'
 import PlayIcon from '../../icons/play.svg'
 
 export default ({ work, target }) => {
-  const { tablet } = config.breakpoints
+  const { mobile } = config.breakpoints
   const mq = target.match('mobile')
-    ? { maxWidth: tablet - 1 }
-    : { minWidth: tablet }
+    ? { maxWidth: mobile - 1 }
+    : { minWidth: mobile }
   return (
     <MediaQuery
       {...mq}

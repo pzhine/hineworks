@@ -9,10 +9,10 @@ export default ({ work, target }) => {
     ...(work.media[target].screens || []),
     ...(work.media[target].photos || []),
   ]
-  const { tablet } = config.breakpoints
+  const { mobile } = config.breakpoints
   const mq = target.match('mobile')
-    ? { maxWidth: tablet - 1 }
-    : { minWidth: tablet }
+    ? { maxWidth: mobile - 1 }
+    : { minWidth: mobile }
   return (
     <MediaQuery {...mq}>
       <div className={styles.gallery}>

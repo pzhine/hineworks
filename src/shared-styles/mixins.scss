@@ -51,8 +51,8 @@
   .playButton {
     pointer-events: none;
     position: absolute;
-    width: 4em;
-    height: 4em;
+    width: 55px;
+    height: 55px;
     z-index: 10;
     transform-origin: center center;
   }
@@ -68,4 +68,5 @@
   justify-content: center;
   top: 6.5vw;
   right: 6.5vw;
+  cursor: pointer;
 }

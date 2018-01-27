@@ -6,14 +6,14 @@ import config from '../../content/config.json'
 import styles from './styles.scss'
 
 export default ({ work, target }) => {
-  const { tablet } = config.breakpoints
+  const { mobile } = config.breakpoints
   const mq = target.match('mobile')
-    ? { maxWidth: tablet - 1 }
-    : { minWidth: tablet }
+    ? { maxWidth: mobile - 1 }
+    : { minWidth: mobile }
   return (
     <MediaQuery {...mq}>
       {work.media[target].index.map(src =>
-        <LazyLoad key={src}>
+        <LazyLoad key={src} once>
           <div
             style={{
               backgroundImage: `url('${config.mediaUrl}/${work.slug}/${src}.png')`,
