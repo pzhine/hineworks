@@ -12,18 +12,21 @@ export default ({ work, target }) => {
     : { minWidth: mobile }
   return (
     <MediaQuery {...mq}>
-      {work.media[target].index.map(src =>
-        <LazyLoad key={src} once>
-          <div
-            style={{
-              backgroundImage: `url('${config.mediaUrl}/${work.slug}/${src}.png')`,
-            }}
-            className={cx(styles.thumb, styles[target], {
-              [styles.twoRows]: work.media[target].index.length === 2,
-            })}
-          />
-        </LazyLoad>
-      )}
+      {work.media[target].index.map(src => {
+        const ext = src.match('photo') ? 'jpg' : 'png'
+        return (
+          <LazyLoad key={src} once>
+            <div
+              style={{
+                backgroundImage: `url('${config.mediaUrl}/${work.slug}/${src}.${ext}')`,
+              }}
+              className={cx(styles.thumb, styles[target], {
+                [styles.twoRows]: work.media[target].index.length === 2,
+              })}
+            />
+          </LazyLoad>
+        )
+      })}
     </MediaQuery>
   )
 }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import cx from 'classnames'
 import _ from 'lodash'
+import { compose } from 'redux'
+import freezeProps from '../../hoc/freezeProps'
 import styles from './styles.scss'
 import CloseIcon from '../../icons/close.svg'
 import LoadingIcon from '../../icons/loading.svg'
@@ -75,4 +77,12 @@ class Player extends Component {
   }
 }
 
-export default lockScroll({ lockWhen: props => props.isActive })(Player)
+export default compose(
+  lockScroll({ lockWhen: props => props.isActive }),
+  freezeProps({
+    propsToFreeze: props => ({
+      src: props.isActive,
+      title: props.isActive,
+    }),
+  })
+)(Player)

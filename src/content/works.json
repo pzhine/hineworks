@@ -19,12 +19,12 @@
       ],
       "media": {
         "mobile": {
-          "index": ["index-mobile"],
+          "index": ["index-mobile-photo"],
           "videos": ["video2-mobile", "video3-mobile"],
           "photos": ["photo1", "photo2", "photo3"]
         },
         "desktop": {
-          "index": ["index-desktop"],
+          "index": ["index-desktop-photo"],
           "videos": ["video1-desktop", "video2-mobile", "video2-desktop", "video3-mobile"],
           "photos": ["photo1", "photo2", "photo3"]
         }
@@ -73,14 +73,14 @@
       ],
       "media": {
         "mobile": {
-          "index": ["screen1", "screen2"],
+          "index": ["photo1", "photo2"],
           "videos": ["video-desktop"],
-          "screens": ["screen1", "screen2", "screen3"]
+          "screens": ["photo1", "photo2", "photo3"]
         },
         "desktop": {
-          "index": ["screen1"],
+          "index": ["photo1"],
           "videos": ["video-desktop"],
-          "screens": ["screen1", "screen2", "screen3"]
+          "screens": ["photo1", "photo2", "photo3"]
         }
       },
       "body": [
@@ -102,14 +102,14 @@
       ],
       "media": {
         "mobile": {
-          "index": ["screen2-mobile"],
+          "index": ["photo2-mobile"],
           "videos": ["video-mobile"],
-          "screens": ["screen1-mobile", "screen2-mobile"]
+          "screens": ["photo1-mobile", "photo2-mobile"]
         },
         "desktop": {
-          "index": ["screen1-desktop"],
+          "index": ["photo1-desktop"],
           "videos": ["video-desktop", "video-mobile"],
-          "screens": ["screen1-desktop", "screen1-tablet", "screen1-mobile"]
+          "screens": ["photo1-desktop", "photo1-tablet", "photo1-mobile"]
         }
       },
       "body": [

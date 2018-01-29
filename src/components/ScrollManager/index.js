@@ -23,11 +23,18 @@ class ScrollManager extends Component {
   prevPage() {
     return this.history[this.history.length - 1]
   }
+  isExcluded(pathname) {
+    return this.props.exclude.reduce(
+      (exclude, p) => exclude || pathname.match(p),
+      false
+    )
+  }
   componentWillReceiveProps(nextProps) {
     const { location } = this.props
     if (
       location.pathname !== nextProps.location.pathname &&
       !nextProps.location.hash &&
+      !this.isExcluded(nextProps.location.pathname) &&
       (!this.history.length ||
         this.prevPage().pathname !== nextProps.location.pathname)
     ) {

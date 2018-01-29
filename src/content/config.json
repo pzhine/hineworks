@@ -12,7 +12,7 @@
   "linkedinUrl": "https://linkedin.com/in/pzhine",
   "githubUrl": "https://github.com/pzhine",
   "email": "paul@hine.works",
-  "mediaUrl": "https://hineworks.nyc3.digitaloceanspaces.com/media",
+  "mediaUrl": "http://static.hine.works/media/2",
   "breakpoints": {
     "desktop": 1024,
     "mobile": 600

@@ -13,15 +13,22 @@ export default ({ work, target }) => {
   const mq = target.match('mobile')
     ? { maxWidth: mobile - 1 }
     : { minWidth: mobile }
+
   return (
     <MediaQuery {...mq}>
       <div className={styles.gallery}>
         {images.map(src => {
           const ext = src.match('photo') ? 'jpg' : 'png'
+          let className = styles.desktop
+          if (src.match('mobile')) {
+            className = styles.mobile
+          } else if (src.match('tablet')) {
+            className = styles.tablet
+          }
           return (
             <Link to={`/on/${work.slug}/play/${src}.${ext}`} key={target + src}>
               <img
-                className={src.match('mobile') ? styles.mobile : styles.desktop}
+                className={className}
                 src={`${config.mediaUrl}/${work.slug}/${src}.${ext}`}
                 alt={'gallery thumbnail'}
               />

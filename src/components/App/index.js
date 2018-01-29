@@ -15,7 +15,7 @@ import Player from '../Player'
 
 const App = () =>
   <Provider store={store}>
-    <ScrollManager>
+    <ScrollManager exclude={['/play/']}>
       <main className={styles.app}>
         <Menu />
         <Nav />
