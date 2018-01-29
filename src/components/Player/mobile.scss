@@ -46,7 +46,7 @@
     }
 
     video, img {
-      height: 83vh;
+      max-height: 83vh;
       max-width: 90%;
       background: transparent;
       z-index: 5;

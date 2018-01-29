@@ -13,6 +13,12 @@ import CloseIcon from '../../icons/close.svg'
 const onClick = ({ e, toggleMenuIsActive }) => {
   const { target } = e
   if (target.tagName.toLowerCase() === 'a' && target.id !== 'hamburger') {
+    if (window.location.href.match(target.href)) {
+      setTimeout(() => {
+        document.documentElement.scrollTop = 0
+        document.body.scrollTop = 0
+      }, 100)
+    }
     toggleMenuIsActive(false)
   }
 }
@@ -20,7 +26,7 @@ const onClick = ({ e, toggleMenuIsActive }) => {
 const Menu = ({ toggleMenuIsActive, app }) =>
   <div
     className={cx(styles.menu, { [styles.isActive]: app.menuIsActive })}
-    onClick={e => onClick({ e, toggleMenuIsActive })}
+    onClick={e => app.menuIsActive && onClick({ e, toggleMenuIsActive })}
   >
     <a
       onClick={() => toggleMenuIsActive(true)}
