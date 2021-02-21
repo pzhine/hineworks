@@ -1,4 +1,3 @@
-import 'babel-polyfill'
 import express from 'express'
 import compression from 'compression'
 import path from 'path'
@@ -7,11 +6,25 @@ import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import template from './template'
 import config from '../content/config.json'
+import kytConfig from '../../kyt.config'
 import App from '../components/App'
 
 const clientAssets = require(KYT.ASSETS_MANIFEST) // eslint-disable-line import/no-dynamic-require
 const port = process.env.PORT || parseInt(KYT.SERVER_PORT, 10)
 const server = express()
+
+const getClientAsset = ({ name, req }) => {
+  if (!clientAssets[name]) {
+    return null
+  }
+  if (process.env.NODE_ENV === 'development') {
+    return clientAssets[name].replace(
+      kytConfig.clientURL,
+      `http://${req.hostname}:3001`
+    )
+  }
+  return clientAssets[name]
+}
 
 // Remove annoying Express header addition.
 server.disable('x-powered-by')
@@ -41,10 +54,10 @@ server.get('*', (req, res) => {
         title: config.siteTitle,
         description: config.siteDescription,
         googleTrackingId: config.googleTrackingId,
-        manifestJSBundle: clientAssets['manifest.js'],
-        mainJSBundle: clientAssets['main.js'],
-        vendorJSBundle: clientAssets['vendor.js'],
-        mainCSSBundle: clientAssets['main.css'],
+        manifestJSBundle: getClientAsset({ name: 'manifest.js', req }),
+        mainJSBundle: getClientAsset({ name: 'main.js', req }),
+        vendorJSBundle: getClientAsset({ name: 'vendor.js', req }),
+        mainCSSBundle: getClientAsset({ name: 'main.css', req }),
       })
     )
   }

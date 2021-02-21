@@ -2,6 +2,37 @@
   "heading": "Some recent work",
   "projects": [
     {
+      "slug": "inyourland",
+      "title": "In Your Land",
+      "info": [
+        ["Clients", "Jeff Mertz"],
+        ["Stack", "Node, React Native"],
+        ["Media", "Video Projectors, Chromecasts, iPad App"],
+        ["Venue", "Glyndoor Gallery, Wave Hill Public Gardens"]
+      ],
+      "body": [
+        "Jeff Mertz is a photographer and filmmaker. Over the course of three seasons, Jeff filmed birds in the greater New York City area. The footage, along with an original score, became a two-channel video installation for the New York Audubon Society's artist-in-residence program on Govenor's Island during the summer of 2017.",
+        "For the installation's appearance in the Glyndoor Gallery at Wave Hill, I built an interactive iPad app that adds an exploratory component to the experience, as well as the software that synchs the video streams with the content in the apps.",
+        "The web version of the film and iPhone/Android companion apps are in progress."
+      ],
+      "links": [
+        ["Exhibition home", "https://www.wavehill.org/arts/exhibits/avifauna-birds-habitat/"],
+        ["Press release", "https://www.wavehill.org/media/uploads/wave_hill_explores_birds_and_their_habitat_in_exhibition_opening_april_7_2018.pdf"]
+      ],
+      "media": {
+        "mobile": {
+          "index": ["index-mobile-photo"],
+          "videos": ["video1-mobile", "video4-mobile"],
+          "photos": ["photo1", "photo2", "photo3", "photo4"]
+        },
+        "desktop": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-desktop", "video2-desktop", "video3-desktop", "video4-desktop"],
+          "photos": ["photo1", "photo2", "photo3", "photo4"]
+        }
+      }
+    },
+    {
       "slug": "ibm-usopen",
       "title": "Tennis Portraits with Watson",
       "info": [

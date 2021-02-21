@@ -49,9 +49,13 @@
     .back {
       display: block;
       margin-bottom: 26px;
+
+      path {
+        stroke: $body-color;
+      }
     }
 
-    .thumb {
+    .thumb, .indexThumbs {
       display: block;
       opacity: 0;
       height: 0;
@@ -65,17 +69,24 @@
   }
 
 }
+.indexThumbs {
+  width: 270px;
+  height: 348px;
+  display: block;
+}
 .thumb {
   display: block;
   border: 1px solid $border-color;
+  background-color: $placeholder-color;
   background-size: cover;
-  background-position: top center;
+  background-position: center -30px;
   width: 270px;
-  height: 420px;
+  height: 348px;
 
   &.twoRows {
+    background-position: center center;
     height: 170px;
-    margin-bottom: 0.5em;
+    margin-bottom: 8px;
   }
 }
 .body {

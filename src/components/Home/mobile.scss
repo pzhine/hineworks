@@ -1,4 +1,11 @@
 .home {
+  transition: opacity 3000ms ease-in-out;
+  opacity: 1;
+
+  &.isTransitioning {
+    opacity: 0;
+  }
+
   .title, .intro {
     margin-top: 80px;
   }
@@ -10,10 +17,10 @@
 
   .intro {
     margin-bottom: 80px;
-    width: 245px;
+    width: 280px;
     font-family: $thin-font;
-    font-size: 19px;
-    line-height: 21px;
+    font-size: 22px;
+    line-height: 24px;
 
     .info {
       margin-bottom: 1em;

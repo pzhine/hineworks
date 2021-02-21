@@ -1,4 +1,7 @@
 .project {
+  .summary {
+    margin-bottom: 0;
+  }
   .indexRow {
     display: flex;
     align-items: center;
@@ -23,7 +26,7 @@
     margin-top: 3em;
   }
 
-  .thumb {
+  .thumb, .indexThumbs {
     width: 504px;
     height: 324px;
     overflow: hidden;

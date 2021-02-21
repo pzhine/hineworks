@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #000;
+  background: $player-background-color;
   pointer-events: none;
   @include center-both();
   padding-top: 60px;
@@ -31,14 +31,16 @@
   }
 
   &.isActive {
-    opacity: 1;
     pointer-events: all;
+  }
+
+  &.isVisible {
+    opacity: 1;
   }
 
   .videoContainer {
     @include center-both()
     height: 83vh;
-    position: relative;
 
     video, svg, img {
       position: absolute;

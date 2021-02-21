@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import cx from 'classnames'
 import _ from 'lodash'
 import { compose } from 'redux'
+import Transition from 'react-transition-group/Transition'
 import freezeProps from '../../hoc/freezeProps'
 import styles from './styles.scss'
 import CloseIcon from '../../icons/close.svg'
@@ -50,29 +51,37 @@ class Player extends Component {
   render() {
     const { isActive, title, src, onClose } = this.props
     return (
-      <div className={cx(styles.player, { [styles.isActive]: isActive })}>
-        <button className={styles.closeButton} onClick={onClose}>
-          <CloseIcon />
-        </button>
-        <div className={styles.title}>
-          {title}
-        </div>
-        <div
-          className={cx(styles.videoContainer, {
-            [styles.isLoaded]: this.state.canPlayThrough,
-          })}
-        >
-          {src && src.match('.mp4')
-            ? [
-                <LoadingIcon />,
-                <Video
-                  src={src}
-                  onReadyStateChange={v => this.updateLoadProgress(v)}
-                />,
-              ]
-            : <img src={src} alt={`${title} detail`} />}
-        </div>
-      </div>
+      <Transition in={isActive} timeout={300}>
+        {state =>
+          <div
+            className={cx(styles.player, {
+              [styles.isActive]: isActive,
+              [styles.isVisible]: state === 'entered',
+            })}
+          >
+            <button className={styles.closeButton} onClick={onClose}>
+              <CloseIcon />
+            </button>
+            <div className={styles.title}>
+              {title}
+            </div>
+            <div
+              className={cx(styles.videoContainer, {
+                [styles.isLoaded]: this.state.canPlayThrough,
+              })}
+            >
+              {src && src.match('.mp4')
+                ? [
+                    <LoadingIcon />,
+                    <Video
+                      src={src}
+                      onReadyStateChange={v => this.updateLoadProgress(v)}
+                    />,
+                  ]
+                : <img src={src} alt={`${title} detail`} />}
+            </div>
+          </div>}
+      </Transition>
     )
   }
 }

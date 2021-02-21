@@ -57,7 +57,7 @@ const Project = ({ match, slug }) => {
               </h3>}
             <div className={styles.indexRow}>
               {(!isDesktop || !isDetail) &&
-                <Link to={`/on/${work.slug}`}>
+                <Link to={`/on/${work.slug}`} className={styles.indexThumbs}>
                   <Thumb work={work} target={'mobile'} key={'tm'} />
                   <Thumb work={work} target={'desktop'} key={'td'} />
                 </Link>}

@@ -8,10 +8,13 @@ $header-font: 'Humanst521BTWXX-Roman', sans-serif;
 $body-font: 'Humanist777', sans-serif;
 $thin-font: 'SST', sans-serif;
 
-$background-color: #ffffff;
-$link-color: #d1002d;
-$body-color: #333333;
-$border-color: #979797;
+$background-color: linear-gradient(135deg, #b38fd5 0%,#6dee8e 100%);
+$link-color: #ff0037;
+$body-color: #fff;
+$border-color: rgba(255, 255, 255, 0.7);
+$placeholder-color: rgba(255, 255, 255, 0.2);
+$modal-background-color: linear-gradient(160deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 100%);
+$player-background-color: #000;
 
 $transition-quick: 300ms;
 $transition-super-quick: 50ms;
