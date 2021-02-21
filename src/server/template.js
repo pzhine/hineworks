@@ -13,8 +13,8 @@ export default vo => `
     <meta charSet='utf-8' />
     <meta httpEquiv="Content-Language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="${vo.description}"
-    <link id="favicon" rel="shortcut icon" href="/favicon.png" sizes="16x16 32x32" type="image/png" />
+    <meta name="description" content="${vo.description}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="/fonts.css"/>
