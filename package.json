@@ -1,10 +1,13 @@
 {
   "name": "pholio",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "",
   "main": "",
   "author": "@pzhine",
   "license": "",
+  "engines": {
+    "node": "6.x"
+  },
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "babel-preset-kyt-react": "0.3.0",
@@ -12,16 +15,20 @@
     "classnames": "^2.2.5",
     "compression": "1.6.2",
     "express": "4.15.3",
+    "fast-deep-equal": "^1.0.0",
     "kyt": "0.9.0",
     "lodash": "^4.17.4",
+    "one-event": "^1.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-flip-move": "^3.0.1",
     "react-lazyload": "^2.3.0",
     "react-redux": "^5.0.6",
     "react-responsive": "^4.0.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-svg-loader": "^2.1.0",
+    "react-transition-group": "^2.2.1",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
@@ -36,13 +43,6 @@
     "dev": "kyt dev",
     "build": "kyt build",
     "heroku-postbuild": "kyt build",
-    "start": "node build/server/main.js",
-    "test": "kyt test",
-    "test-watch": "kyt test -- --watch",
-    "test-coverage": "kyt test -- --coverage",
-    "lint": "npm run lint-script && npm run lint-style",
-    "lint-script": "kyt lint-script",
-    "lint-style": "kyt lint-style",
-    "kyt:help": "kyt --help"
+    "start": "node build/server/main.js"
   }
 }

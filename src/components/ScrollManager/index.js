@@ -1,22 +1,25 @@
 import { Component } from 'react'
-import { withRouter } from 'react-router'
+import * as browser from '../../lib/browser'
 
 class ScrollManager extends Component {
   constructor(props) {
     super(props)
     this.history = []
+    browser.setManualScrollRestoration()
   }
-  saveScroll(location) {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+  saveScroll({ location, nextLocation }) {
+    const scrollTop = browser.getScrollPos()
     this.history.push({
       pathname: location.pathname,
       scrollTop,
     })
-    document.documentElement.scrollTop = 0
-    document.body.scrollTop = 0
+    if (!this.isExcluded(nextLocation.pathname)) {
+      browser.scrollTo(0)
+    }
   }
   restoreScroll() {
     const lastPage = this.history.pop()
+    browser.scrollTo(lastPage.scrollTop)
     document.documentElement.scrollTop = lastPage.scrollTop
     document.body.scrollTop = lastPage.scrollTop
   }
@@ -34,11 +37,10 @@ class ScrollManager extends Component {
     if (
       location.pathname !== nextProps.location.pathname &&
       !nextProps.location.hash &&
-      !this.isExcluded(nextProps.location.pathname) &&
       (!this.history.length ||
         this.prevPage().pathname !== nextProps.location.pathname)
     ) {
-      this.saveScroll(location)
+      this.saveScroll({ nextLocation: nextProps.location, location })
     }
   }
   componentDidUpdate(prevProps) {
@@ -57,4 +59,4 @@ class ScrollManager extends Component {
   }
 }
 
-export default withRouter(ScrollManager)
+export default ScrollManager

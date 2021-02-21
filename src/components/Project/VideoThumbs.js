@@ -12,13 +12,14 @@ export default ({ work, target }) => {
   const mq = target.match('mobile')
     ? { maxWidth: mobile - 1 }
     : { minWidth: mobile }
+  const { videos } = work.media[target]
   return (
     <MediaQuery
       {...mq}
       className={cx(styles.videoThumbs, styles[target])}
       component="div"
     >
-      {work.media[target].videos.map(vid => {
+      {videos.map(vid => {
         const ext =
           target.match('mobile') || vid.match('mobile') ? 'png' : 'gif'
         return (
@@ -26,7 +27,10 @@ export default ({ work, target }) => {
             to={`/on/${work.slug}/play/${vid}.mp4`}
             className={cx(
               styles.videoThumb,
-              styles[vid.match('mobile') ? 'mobile' : 'desktop']
+              styles[vid.match('mobile') ? 'mobile' : 'desktop'],
+              {
+                [styles.smaller]: videos.length > 2,
+              }
             )}
             key={target + vid}
           >

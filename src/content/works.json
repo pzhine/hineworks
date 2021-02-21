@@ -2,6 +2,143 @@
   "heading": "Some recent work",
   "projects": [
     {
+      "slug": "databyss",
+      "title": "Databyss",
+      "info": [
+        ["Stack", "React, Node, MongoDB"],
+        ["Media", "Desktop, Mobile"]
+      ],
+      "body": [
+        "I am the co-founder and tech lead for Databyss, a writing app that combines the power of a graph database with the usability of a word processor. Databyss is also a 501(c)(3) charitable organization with a mission to build tools and systems that are freely available to researchers, students, and educators."
+      ],
+      "links": [
+        ["Databyss.org", "https://databyss.org"]
+      ],
+      "media": {
+        "mobile": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-desktop", "video2-desktop"],
+          "photos": ["photo2"]
+        },
+        "desktop": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-desktop", "video2-desktop"],
+          "photos": ["photo2"]
+        }
+      }
+    },
+    {
+      "slug": "magic-lantern",
+      "title": "AR Magic Lantern",
+      "info": [
+        ["Lab", "Full-body Interaction Lab (UPF)"],
+        ["Stack", "Unity"],
+        ["Media", "Desktop, Mobile, Spatial AR"]
+      ],
+      "body": [
+        "As part of the research for my <a href='https://repositori.upf.edu/handle/10230/46272' target='_blank'>master's thesis</a>, I designed and built the next generation of a Spatial AR (SAR) device developed by the Full-body Interaction Lab at Universitat Pompeu Fabra. The 'AR Magic Lantern' is a handheld smart projector that tracks its own location and orientation so it can place situated digital content onto any surface in the environment.",
+        "After presenting the thesis, I continued as the tech lead for the prototype, which is intended for deployment in museums, cultural heritage sites, and other hands-on educational contexts. We are formalizing the elements of the Unity application into a game engine that is specialized for these contexts, making it easier for game designers, experience designers and curators to prototype and deploy interactive AR content."
+      ],
+      "links": [],
+      "media": {
+        "mobile": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-desktop"],
+          "photos": ["photo1"]
+        },
+        "desktop": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-desktop"],
+          "photos": ["photo1"]
+        }
+      }
+    },
+    {
+      "slug": "chem101",
+      "title": "Chem101 Dimensional Analysis",
+      "info": [
+        ["Client", "101edu.com"],
+        ["Stack", "React Native, React Native Web"],
+        ["Media", "Desktop, Mobile"]
+      ],
+      "body": [
+        "Chem101 is a popular chemistry classroom app for mobile and web. For this contract, I built the Dimensional Analysis module, an interactive mini-app that teaches balanced equations through an intuitive touch and drop interface."
+      ],
+      "links": [
+        ["Chem101", "https://101edu.co"]
+      ],
+      "media": {
+        "mobile": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-mobile"],
+          "photos": []
+        },
+        "desktop": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-desktop", "video1-mobile"],
+          "photos": ["index-desktop-photo"]
+        }
+      }
+    },
+    {
+      "slug": "skilltype",
+      "title": "Skilltype",
+      "info": [
+        ["Client", "Skilltype"],
+        ["Stack", "React"],
+        ["Media", "Desktop, Mobile"]
+      ],
+      "body": [
+        "Tony Zanders had a vision and a Wordpress prototype for a talent marketplace built especially for information professionals. I led the implementation of the front end of what would become Skilltype.com. From the start, we focused on responsive, <a href='https://medium.com/skilltype/accessibility-skilltype-f879a4a3abb3' target='_blank'>accessible</a> components. With the working MVP I delivered, Skilltype was able to start signing up users and building their community."
+      ],
+      "links": [
+        ["Skilltype.com", "https://skilltype.com"]
+      ],
+      "media": {
+        "mobile": {
+          "index": ["index-mobile-photo"],
+          "videos": ["video1-mobile"],
+          "photos": ["index-mobile-photo"]
+        },
+        "desktop": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-desktop", "video1-mobile"],
+          "photos": ["index-desktop-photo", "photo1"]
+        }
+      }
+    },
+    {
+      "slug": "inyourland",
+      "title": "In Your Land",
+      "info": [
+        ["Clients", "Jeff Mertz"],
+        ["Stack", "Node, React Native"],
+        ["Media", "Video Projectors, Chromecasts, iPad App"],
+        ["Venue", "Glyndoor Gallery, Wave Hill Public Gardens"]
+      ],
+      "body": [
+        "Jeff Mertz is a photographer and filmmaker. Over the course of three seasons, Jeff filmed birds in the greater New York City area. The footage, along with an original score, became a two-channel video installation for the New York Audubon Society's artist-in-residence program on Govenor's Island during the summer of 2017.",
+        "For the installation's appearance in the Glyndoor Gallery at Wave Hill, I built an interactive iPad app that adds an exploratory component to the experience, as well as the software that synchs the video streams with the content in the apps.",
+        "The web version of the film and iPhone/Android companion apps are in progress."
+      ],
+      "links": [
+        ["Exhibition home", "https://www.wavehill.org/arts/exhibits/avifauna-birds-habitat/"],
+        ["Press release", "https://www.wavehill.org/media/uploads/wave_hill_explores_birds_and_their_habitat_in_exhibition_opening_april_7_2018.pdf"]
+      ],
+      "media": {
+        "mobile": {
+          "index": ["index-mobile-photo"],
+          "videos": ["video1-mobile", "video4-mobile"],
+          "photos": ["photo1", "photo2", "photo3", "photo4"]
+        },
+        "desktop": {
+          "index": ["index-desktop-photo"],
+          "videos": ["video1-desktop", "video2-desktop", "video3-desktop", "video4-desktop"],
+          "photos": ["photo1", "photo2", "photo3", "photo4"]
+        }
+      }
+    },
+    {
       "slug": "ibm-usopen",
       "title": "Tennis Portraits with Watson",
       "info": [

@@ -6,6 +6,10 @@
   .hamburger, .close {
     @include menu-control();
     z-index: 200;
+
+    path {
+      stroke: $body-color;
+    }
   }
 
   .hamburger {
@@ -41,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: $background-color;
+    background: $modal-background-color;
     font-size: 1.5em;
 
     a, a:visited, a:active {

@@ -10,6 +10,7 @@
     width: 568px;
     height: 356px;
     overflow: hidden;
+    background-position: center center;
   }
 
   &.isDetail {
@@ -39,6 +40,10 @@
 
       &.desktop {
         width: 268px;
+
+        &.smaller {
+          width: 190px;
+        }
       }
 
       &.mobile {

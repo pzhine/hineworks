@@ -7,7 +7,7 @@
   justify-content: flex-end;
 
   a, a:visited, a:active {
-    color: #000;
+    color: $body-color;
     text-decoration: none;
     font-size: 18px;
     display: block;
@@ -15,6 +15,11 @@
 
     svg {
       width: 24px;
+
+      path {
+        fill: $body-color;
+        stroke: $body-color;
+      }
     }
   }
 }

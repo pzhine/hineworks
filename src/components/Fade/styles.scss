@@ -1,0 +1,10 @@
+@import '../../shared-styles/index';
+
+.fade {
+  transition: opacity $transition-quick $ease;
+  opacity: 1;
+
+  &.isTransitioning {
+    opacity: 0;
+  }
+}
