@@ -44,12 +44,12 @@
         "mobile": {
           "index": ["index-desktop-photo"],
           "videos": ["video1-desktop"],
-          "photos": ["photo1"]
+          "photos": ["photo1", "photo3"]
         },
         "desktop": {
           "index": ["index-desktop-photo"],
           "videos": ["video1-desktop"],
-          "photos": ["photo1"]
+          "photos": ["photo1", "photo3"]
         }
       }
     },
