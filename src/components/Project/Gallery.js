@@ -16,7 +16,7 @@ export default ({ work, target }) => {
 
   return (
     <MediaQuery {...mq}>
-      <div className={styles.gallery}>
+      <div className="gallery">
         {images.map(src => {
           const ext = src.match('photo') ? 'jpg' : 'png'
           let className = styles.desktop

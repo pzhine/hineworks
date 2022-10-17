@@ -5,7 +5,7 @@ import GithubIcon from '../../icons/github.svg'
 import LinkedinIcon from '../../icons/linkedin.svg'
 
 const Nav = () =>
-  <div className={styles.nav}>
+  <div className="nav">
     <a target="_blank" rel="nofollow" href={cvUrl} alt={'CV'}>
       CV
     </a>

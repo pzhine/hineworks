@@ -18,8 +18,8 @@ export default ({ work, target }) => {
             style={{
               backgroundImage: `url('${config.mediaUrl}/${work.slug}/${src}.${ext}')`,
             }}
-            className={cx(styles.thumb, styles[target], {
-              [styles.twoRows]: work.media[target].index.length === 2,
+            className={cx('thumb', target, {
+              twoRows: work.media[target].index.length === 2,
             })}
           />
         )

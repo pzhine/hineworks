@@ -4,18 +4,18 @@ import { Block } from '../Raw'
 import styles from './styles.scss'
 
 export default ({ work, isDetail }) =>
-  <div className={styles.summary}>
-    <ul className={styles.info}>
+  <div className="summary">
+    <ul className="info">
       {work.info.map(entry =>
         <li key={entry[0]}>
           <em>
             {entry[0]}:
           </em>
-          <Block className={styles.fact} html={entry[1]} />
+          <Block className="fact" html={entry[1]} />
         </li>
       )}
     </ul>
-    <ul className={styles.links}>
+    <ul className="links">
       {!isDetail &&
         <li key="detail">
           <Link to={`/on/${work.slug}`}>Details</Link>

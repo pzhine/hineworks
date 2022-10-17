@@ -8,15 +8,15 @@ import Fade from '../Fade'
 import Project from '../Project'
 
 const Works = ({ location, transitions }) =>
-  <div className={styles.works}>
+  <div className="works">
     <Route
       location={location}
       path="/on/:slug"
       children={({ match }) =>
         <Fade isTransitioning={transitions.location.isActive}>
           <div
-            className={cx(styles.projectList, {
-              [styles.isDetailView]: Boolean(match),
+            className={cx('projectList', {
+              isDetailView: Boolean(match),
             })}
           >
             {works.projects.map(

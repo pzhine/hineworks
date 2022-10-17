@@ -6,8 +6,8 @@ import styles from './styles.scss'
 
 const Home = ({ isTransitioning }) =>
   <div
-    className={cx(styles.home, {
-      [styles.isTransitioning]: isTransitioning,
+    className={cx('home', {
+      isTransitioning: isTransitioning,
     })}
   >
     <Title />

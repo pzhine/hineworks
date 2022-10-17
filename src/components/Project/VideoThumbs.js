@@ -16,7 +16,7 @@ export default ({ work, target }) => {
   return (
     <MediaQuery
       {...mq}
-      className={cx(styles.videoThumbs, styles[target])}
+      className={cx('videoThumbs', styles[target])}
       component="div"
     >
       {videos.map(vid => {
@@ -26,15 +26,15 @@ export default ({ work, target }) => {
           <Link
             to={`/on/${work.slug}/play/${vid}.mp4`}
             className={cx(
-              styles.videoThumb,
-              styles[vid.match('mobile') ? 'mobile' : 'desktop'],
+              'videoThumb',
+              vid.match('mobile') ? 'mobile' : 'desktop',
               {
-                [styles.smaller]: videos.length > 2,
+                smaller: videos.length > 2,
               }
             )}
             key={target + vid}
           >
-            <div className={styles.playButton}>
+            <div className="playButton">
               <PlayIcon />
             </div>
             <img

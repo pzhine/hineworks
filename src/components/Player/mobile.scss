@@ -39,7 +39,7 @@
   }
 
   .videoContainer {
-    @include center-both()
+    @include center-both();
     height: 83vh;
 
     video, svg, img {

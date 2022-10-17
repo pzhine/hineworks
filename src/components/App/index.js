@@ -19,7 +19,7 @@ import Player from '../Player'
 const App = ({ location, transitions }) =>
   <Provider store={store}>
     <ScrollManager exclude={['/play/']} location={location}>
-      <main className={styles.app}>
+      <main className="app">
         <Menu />
         <Nav />
         <Route
@@ -38,7 +38,7 @@ const App = ({ location, transitions }) =>
               onClose={() => history.goBack()}
             />}
         />
-        <div className={styles.content}>
+        <div className="content">
           <Route
             exact
             location={location}

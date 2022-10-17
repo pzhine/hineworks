@@ -10,7 +10,7 @@
   "linkedinUrl": "https://linkedin.com/in/pzhine",
   "githubUrl": "https://github.com/pzhine",
   "email": "paul@hine.works",
-  "mediaUrl": "http://static.hine.works/media/2",
+  "mediaUrl": "https://cdn01.databyss.org/_hineworks/media",
   "breakpoints": {
     "desktop": 1024,
     "mobile": 600

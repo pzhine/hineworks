@@ -54,20 +54,20 @@ class Player extends Component {
       <Transition in={isActive} timeout={300}>
         {state =>
           <div
-            className={cx(styles.player, {
-              [styles.isActive]: isActive,
-              [styles.isVisible]: state === 'entered',
+            className={cx('player', {
+              isActive: isActive,
+              isVisible: state === 'entered',
             })}
           >
-            <button className={styles.closeButton} onClick={onClose}>
+            <button className="closeButton" onClick={onClose}>
               <CloseIcon />
             </button>
-            <div className={styles.title}>
+            <div className="title">
               {title}
             </div>
             <div
-              className={cx(styles.videoContainer, {
-                [styles.isLoaded]: this.state.canPlayThrough,
+              className={cx('videoContainer', {
+                isLoaded: this.state.canPlayThrough,
               })}
             >
               {src && src.match('.mp4')

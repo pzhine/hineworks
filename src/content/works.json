@@ -151,9 +151,7 @@
         "Ogilvy had developed a photobooth kiosk application for IBM that uses the Watson Tone Analyzer API to generate an “emoji portrait” of the user based on their responses to a set of personality questions.",
         "I was tasked with adapting the Javascript codebase for photobooths at the US Open as well as building a play-at-home version for web and mobile web."
       ],
-      "links": [
-        ["View Demo", "http://static.hine.works/demos/portraits", true]
-      ],
+      "links": [],
       "media": {
         "mobile": {
           "index": ["index-mobile-photo"],
@@ -205,9 +203,7 @@
         ["Stack", "React, Redux, Webpack"],
         ["Media", "Kiosk"]
       ],
-      "links": [
-        ["View Demo", "http://static.hine.works/demos/ibmhimss", true]
-      ],
+      "links": [],
       "media": {
         "mobile": {
           "index": ["photo1", "photo2"],

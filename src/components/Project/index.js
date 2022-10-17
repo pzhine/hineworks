@@ -38,30 +38,30 @@ const Project = ({ match, slug }) => {
   const { desktop } = config.breakpoints
   return (
     <article
-      className={cx(styles.project, {
-        [styles.isDetail]: isDetail,
-        [styles.isDetailView]: isDetailView,
+      className={cx('project', {
+        isDetail: isDetail,
+        isDetailView: isDetailView,
       })}
     >
-      <Link className={styles.back} to={'/'}>
+      <Link className="back" to={'/'}>
         <BackIcon />
       </Link>
       <MediaQuery minWidth={desktop + 1}>
         {isDesktop =>
-          <div className={styles.indexContainer}>
+          <div className="indexContainer">
             {!isDesktop &&
               <h3>
                 <Link to={`/on/${work.slug}`}>
                   {work.title}
                 </Link>
               </h3>}
-            <div className={styles.indexRow}>
+            <div className="indexRow">
               {(!isDesktop || !isDetail) &&
-                <Link to={`/on/${work.slug}`} className={styles.indexThumbs}>
+                <Link to={`/on/${work.slug}`} className="indexThumbs">
                   <Thumb work={work} target={'mobile'} key={'tm'} />
                   <Thumb work={work} target={'desktop'} key={'td'} />
                 </Link>}
-              <div className={styles.summaryContainer}>
+              <div className="summaryContainer">
                 {isDesktop &&
                   <h3>
                     <Link to={`/on/${work.slug}`}>
@@ -78,7 +78,7 @@ const Project = ({ match, slug }) => {
           </div>}
       </MediaQuery>
       {isDetail &&
-        <div className={styles.detailContainer}>
+        <div className="detailContainer">
           <MediaQuery maxWidth={desktop}>
             <VideoThumbs target={'mobile'} work={work} key={'vtm'} />
             <VideoThumbs target={'desktop'} work={work} key={'vtd'} />

@@ -4,7 +4,7 @@ import config from '../../content/config.json'
 import { Block } from '../Raw'
 
 export default () =>
-  <section className={styles.title}>
-    <Block className={styles.line1} html={config.title[0]} />
-    <Block className={styles.line2} html={config.title[1]} />
+  <section className="title">
+    <Block className="line1" html={config.title[0]} />
+    <Block className="line2" html={config.title[1]} />
   </section>

@@ -25,25 +25,25 @@ const onClick = ({ e, toggleMenuIsActive }) => {
 
 const Menu = ({ toggleMenuIsActive, app }) =>
   <div
-    className={cx(styles.menu, { [styles.isActive]: app.menuIsActive })}
+    className={cx('menu', { isActive: app.menuIsActive })}
     onClick={e => app.menuIsActive && onClick({ e, toggleMenuIsActive })}
   >
     <a
       onClick={() => toggleMenuIsActive(true)}
       id="hamburger"
-      className={styles.hamburger}
+      className="hamburger"
     >
       <HamburgerIcon />
     </a>
-    <a onClick={() => toggleMenuIsActive(false)} className={styles.close}>
+    <a onClick={() => toggleMenuIsActive(false)} className="close">
       <CloseIcon />
     </a>
-    <div className={styles.container}>
-      <Link className={styles.title} to="/">
+    <div className="container">
+      <Link className="title" to="/">
         {config.title.join(' ')}
       </Link>
       <a
-        className={styles.email}
+        className="email"
         target="_blank"
         href={`mailto:${config.email}`}
       >
