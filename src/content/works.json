@@ -3,25 +3,25 @@
   "projects": [
     {
       "slug": "databyss",
-      "title": "Databyss",
+      "title": "The Databyss Foundation",
       "info": [
-        ["Stack", "React, Node, MongoDB"],
-        ["Media", "Desktop, Mobile"]
+        ["When", "2018 - Present"]
       ],
       "body": [
-        "I am the co-founder and tech lead for Databyss, a writing app that combines the power of a graph database with the usability of a word processor. Databyss is also a 501(c)(3) charitable organization with a mission to build tools and systems that are freely available to researchers, students, and educators."
+        "I am the co-founder of The Databyss Foundation, a 501(c)(3) charitable organization committed to building and maintaining an open and equitable infrastructure for the advancement of those working in the humanities and digital humanities. We built Databyss, a free writing and research application that combines the power of a graph database with the usability of a word processor. "
       ],
       "links": [
-        ["Databyss.org", "https://databyss.org"]
+        ["The Databyss Foundation", "https://databyss.org/foundation"],
+        ["Databyss app", "https://databyss.org"]
       ],
       "media": {
         "mobile": {
-          "index": ["index-desktop-photo"],
+          "index": ["index-desktop-photo-3"],
           "videos": ["video1-desktop", "video2-desktop"],
           "photos": ["photo2"]
         },
         "desktop": {
-          "index": ["index-desktop-photo"],
+          "index": ["index-desktop-photo-3"],
           "videos": ["video1-desktop", "video2-desktop"],
           "photos": ["photo2"]
         }
@@ -31,24 +31,25 @@
       "slug": "magic-lantern",
       "title": "AR Magic Lantern",
       "info": [
-        ["Lab", "Full-body Interaction Lab (UPF)"],
-        ["Stack", "Unity"],
-        ["Media", "Desktop, Mobile, Spatial AR"]
+        ["When", "2018 - Present"],
+        ["Where", "Full-body Interaction Lab (UPF)"]
       ],
       "body": [
-        "As part of the research for my <a href='https://repositori.upf.edu/handle/10230/46272' target='_blank'>master's thesis</a>, I designed and built the next generation of a Spatial AR (SAR) device developed by the Full-body Interaction Lab at Universitat Pompeu Fabra. The 'AR Magic Lantern' is a handheld smart projector that tracks its own location and orientation so it can place situated digital content onto any surface in the environment.",
-        "After presenting the thesis, I continued as the tech lead for the prototype, which is intended for deployment in museums, cultural heritage sites, and other hands-on educational contexts. We are formalizing the elements of the Unity application into a game engine that is specialized for these contexts, making it easier for game designers, experience designers and curators to prototype and deploy interactive AR content."
+        "The 'AR Magic Lantern' is a handheld smart projector that tracks its own location and orientation so it can place situated digital content onto any surface in the environment. I have contributed research and engineering to the project since 2018, and now oversee its development into a production-ready prototype intended for deployment in museums, cultural heritage sites, and other location-based contexts."
       ],
-      "links": [],
+      "links": [
+        ["AR Magic Lantern: Group-based Co-Located Augmentation Based on the World-as-Support AR Paradigm", "https://doi.org/10.1145/3491101.3519918"],
+        ["The territory is the map: augmented discovery in a digital cultural heritage experience", "http://hdl.handle.net/10230/46272"]
+      ],
       "media": {
         "mobile": {
           "index": ["index-desktop-photo"],
-          "videos": ["video1-desktop"],
+          "videos": ["video1-desktop-1"],
           "photos": ["photo1", "photo3"]
         },
         "desktop": {
           "index": ["index-desktop-photo"],
-          "videos": ["video1-desktop"],
+          "videos": ["video1-desktop-1"],
           "photos": ["photo1", "photo3"]
         }
       }
@@ -174,9 +175,7 @@
         ["Stack", "React, Redux, Webpack"],
         ["Media", "Desktop, Mobile"]
       ],
-      "links": [
-        ["Visit Site", "http://research.ibm.com/ibm-q/quantum-card-test"]
-      ],
+      "links": [],
       "media": {
         "mobile": {
           "index": ["screen1-mobile"],
