@@ -1,10 +1,10 @@
 {
   "siteTitle": "Paul Hine: Works",
-  "siteDescription": "Professional portfolio of Paul Hine, software engineer with specializations in XR systems (augmented and virtual reality), full-body interaction, and distributed computing.",
+  "siteDescription": "Professional portfolio of Paul Hine, software engineer with specializations in XR systems (augmented and virtual reality) and the digital humanities.",
   "title": ["Paul", "Hine"],
   "greeting": "Nice to see you",
   "intro": [
-    "I am a software engineer with specializations in XR systems (augmented and virtual reality), full-body interaction, and distributed computing."
+    "I am a software engineer with specializations in XR systems (augmented and virtual reality) and the digital humanities."
   ],
   "cvUrl": "http://static.hine.works/pzh-resume.pdf",
   "linkedinUrl": "https://linkedin.com/in/pzhine",
