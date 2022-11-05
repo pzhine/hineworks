@@ -143,7 +143,7 @@
       "slug": "ibm-usopen",
       "title": "Tennis Portraits with Watson",
       "info": [
-        ["Agency", "Ogilvy &amp; Mather"],
+        ["Agency", "Ogilvy"],
         ["Clients", "IBM, US Open"],
         ["Stack", "Javascript, Node.js"],
         ["Media", "Kiosk, Desktop, Mobile"]
@@ -170,7 +170,7 @@
       "slug": "ibm-quantum",
       "title": "Try Your Hand at Quantum",
       "info": [
-        ["Agency", "Ogilvy &amp; Mather"],
+        ["Agency", "Ogilvy"],
         ["Clients", "IBM"],
         ["Stack", "React, Redux, Webpack"],
         ["Media", "Desktop, Mobile"]
@@ -197,7 +197,7 @@
       "slug": "ibm-himss",
       "title": "Watson Health Activation",
       "info": [
-        ["Agency", "Ogilvy &amp; Mather"],
+        ["Agency", "Ogilvy"],
         ["Clients", "IBM"],
         ["Stack", "React, Redux, Webpack"],
         ["Media", "Kiosk"]
