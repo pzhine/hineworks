@@ -6,11 +6,11 @@
   "intro": [
     "I am a software engineer with specializations in XR systems (augmented and virtual reality) and the digital humanities."
   ],
-  "cvUrl": "http://static.hine.works/pzh-resume.pdf",
+  "cvUrl": "https://public.databyss.cloud/_hineworks/pzh-resume.pdf",
   "linkedinUrl": "https://linkedin.com/in/pzhine",
   "githubUrl": "https://github.com/pzhine",
   "email": "paul@hine.works",
-  "mediaUrl": "https://cdn01.databyss.org/_hineworks/media",
+  "mediaUrl": "https://public.databyss.cloud/_hineworks/media",
   "breakpoints": {
     "desktop": 1024,
     "mobile": 600
