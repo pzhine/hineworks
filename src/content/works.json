@@ -2,6 +2,59 @@
   "heading": "Some recent work",
   "projects": [
     {
+      "slug": "magic-lantern",
+      "title": "AR Magic Lantern",
+      "info": [
+        ["When", "2018 - Present"],
+        ["Where", "Full-body Interaction Lab (UPF)"]
+      ],
+      "body": [
+        "The 'AR Magic Lantern' is a handheld smart projector that tracks its own location and orientation so it can place situated digital content onto any surface in the environment. I have contributed research and engineering to the project since 2018, and now oversee its development into a production-ready prototype intended for deployment in museums, cultural heritage sites, and other location-based contexts."
+      ],
+      "links": [
+        ["AR Magic Lantern (EMIL Lighthouse Project)", "https://emil-xr.eu/lighthouse-projects/upf-ar-magic-lantern/"]
+      ],
+      "media": {
+        "mobile": {
+          "index": ["arml-photo-forum"],
+          "videos": ["https://www.youtube.com/watch?v=ezjInZS8GYs"],
+          "photos": ["arml-photo-pair", "arml-photo-laundry"]
+        },
+        "desktop": {
+          "index": ["arml-photo-forum"],
+          "videos": ["https://www.youtube.com/watch?v=ezjInZS8GYs"],
+          "photos": ["arml-photo-pair", "arml-photo-laundry"]
+        }
+      }
+    },
+    {
+      "slug": "elysium",
+      "title": "Elysium",
+      "info": [
+        ["When", "2021"],
+        ["Stack", "Unity, React Native"]
+      ],
+      "body": [
+        "Worked with stakeholders, engineers and designers to identify requirements and develop specifications for Elysium, a no-code AR creation application. Managed the execution of a modular XR subsystem built with Unity that can be embedded in a React Native application for deployment on iOS and Android devices."
+      ],
+      "links": [
+        ["Elysium", "https://elysium.ar/"],
+        ["Elysium iOS app", "https://apps.apple.com/app/id1594239469"]
+      ],
+      "media": {
+        "mobile": {
+          "index": ["index-desktop-photo-1"],
+          "videos": ["https://www.youtube.com/watch?v=ykCVMH-9e04"],
+          "photos": ["elysium-photo-1", "elysium-photo-2", "elysium-photo-3"]
+        },
+        "desktop": {
+          "index": ["index-desktop-photo-1"],
+          "videos": ["https://www.youtube.com/watch?v=ykCVMH-9e04"],
+          "photos": ["elysium-photo-1", "elysium-photo-2", "elysium-photo-3"]
+        }
+      }
+    },
+    {
       "slug": "databyss",
       "title": "The Databyss Foundation",
       "info": [
@@ -24,33 +77,6 @@
           "index": ["index-desktop-photo-3"],
           "videos": ["video1-desktop", "video2-desktop"],
           "photos": ["photo2"]
-        }
-      }
-    },
-    {
-      "slug": "magic-lantern",
-      "title": "AR Magic Lantern",
-      "info": [
-        ["When", "2018 - Present"],
-        ["Where", "Full-body Interaction Lab (UPF)"]
-      ],
-      "body": [
-        "The 'AR Magic Lantern' is a handheld smart projector that tracks its own location and orientation so it can place situated digital content onto any surface in the environment. I have contributed research and engineering to the project since 2018, and now oversee its development into a production-ready prototype intended for deployment in museums, cultural heritage sites, and other location-based contexts."
-      ],
-      "links": [
-        ["AR Magic Lantern: Group-based Co-Located Augmentation Based on the World-as-Support AR Paradigm", "https://doi.org/10.1145/3491101.3519918"],
-        ["The territory is the map: augmented discovery in a digital cultural heritage experience", "http://hdl.handle.net/10230/46272"]
-      ],
-      "media": {
-        "mobile": {
-          "index": ["index-desktop-photo"],
-          "videos": ["video1-desktop-1"],
-          "photos": ["photo1", "photo3"]
-        },
-        "desktop": {
-          "index": ["index-desktop-photo"],
-          "videos": ["video1-desktop-1"],
-          "photos": ["photo1", "photo3"]
         }
       }
     },
