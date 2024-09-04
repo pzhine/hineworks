@@ -2,28 +2,56 @@
   "heading": "Some recent work",
   "projects": [
     {
+      "slug": "databyss",
+      "title": "Databyss",
+      "info": [
+        ["When", "2018 - Present"],
+        ["Built with", "React, Electron"]
+      ],
+      "body": [
+        "Databyss is a non-commercial writing and research application that combines the power of a graph database with the usability of a word processor. The editor app runs on Windows and Mac, and lets users publish collections of their writing to the web. It is written in React and Typescript and uses Electron for native desktop support."
+      ],
+      "links": [
+        ["Databyss app", "https://databyss.org"],
+        ["The Databyss Foundation", "https://databyss.org/foundation"]
+      ],
+      "media": {
+        "mobile": {
+          "index": ["databyss-photo-collections"],
+          "videos": ["video1-desktop", "video2-desktop"],
+          "photos": ["databyss-photo-biblio", "databyss-photo-publish"]
+        },
+        "desktop": {
+          "index": ["databyss-photo-collections"],
+          "videos": ["video1-desktop", "video2-desktop"],
+          "photos": ["databyss-photo-biblio", "databyss-photo-publish"]
+        }
+      }
+    },
+    {
       "slug": "magic-lantern",
       "title": "AR Magic Lantern",
       "info": [
         ["When", "2018 - Present"],
-        ["Where", "Full-body Interaction Lab (UPF)"]
+        ["Where", "Full-body Interaction Lab (UPF)"],
+        ["Built with", "Unity, Magic ✨"]
       ],
       "body": [
-        "The 'AR Magic Lantern' is a handheld smart projector that tracks its own location and orientation so it can place situated digital content onto any surface in the environment. I have contributed research and engineering to the project since 2018, and now oversee its development into a production-ready prototype intended for deployment in museums, cultural heritage sites, and other location-based contexts."
+        "Handheld smart projector that tracks its own location and orientation so it can place situated digital content onto any surface in the environment. I have contributed research and engineering to the project since 2018, and now oversee its development into a production-ready prototype intended for deployment in museums, cultural heritage sites, and other location-based contexts."
       ],
       "links": [
         ["AR Magic Lantern (EMIL Lighthouse Project)", "https://emil-xr.eu/lighthouse-projects/upf-ar-magic-lantern/"]
       ],
       "media": {
         "mobile": {
-          "index": ["arml-photo-forum"],
+          "index": ["arml-photo-logo"],
           "videos": ["https://www.youtube.com/watch?v=ezjInZS8GYs"],
-          "photos": ["arml-photo-pair", "arml-photo-laundry"]
+          "photos": ["arml-photo-handheld", "arml-photo-muhba"]
         },
         "desktop": {
-          "index": ["arml-photo-forum"],
+          "index": ["arml-photo-logo"],
           "videos": ["https://www.youtube.com/watch?v=ezjInZS8GYs"],
-          "photos": ["arml-photo-pair", "arml-photo-laundry"]
+          "photos": ["arml-photo-handheld", "arml-photo-muhba"]
         }
       }
     },
@@ -32,10 +60,10 @@
       "title": "Elysium",
       "info": [
         ["When", "2021"],
-        ["Stack", "Unity, React Native"]
+        ["Built with", "React Native, Unity"]
       ],
       "body": [
-        "Worked with stakeholders, engineers and designers to identify requirements and develop specifications for Elysium, a no-code AR creation application. Managed the execution of a modular XR subsystem built with Unity that can be embedded in a React Native application for deployment on iOS and Android devices."
+        "Elysium is a no-code AR creation application for iOS and Android devices built with Unity and React Native."
       ],
       "links": [
         ["Elysium", "https://elysium.ar/"],
@@ -55,41 +83,15 @@
       }
     },
     {
-      "slug": "databyss",
-      "title": "The Databyss Foundation",
-      "info": [
-        ["When", "2018 - Present"]
-      ],
-      "body": [
-        "I am the co-founder of The Databyss Foundation, a 501(c)(3) charitable organization committed to building and maintaining an open and equitable infrastructure for the advancement of those working in the humanities and digital humanities. We built Databyss, a free writing and research application that combines the power of a graph database with the usability of a word processor. "
-      ],
-      "links": [
-        ["The Databyss Foundation", "https://databyss.org/foundation"],
-        ["Databyss app", "https://databyss.org"]
-      ],
-      "media": {
-        "mobile": {
-          "index": ["index-desktop-photo-3"],
-          "videos": ["video1-desktop", "video2-desktop"],
-          "photos": ["photo2"]
-        },
-        "desktop": {
-          "index": ["index-desktop-photo-3"],
-          "videos": ["video1-desktop", "video2-desktop"],
-          "photos": ["photo2"]
-        }
-      }
-    },
-    {
       "slug": "chem101",
       "title": "Chem101 Dimensional Analysis",
       "info": [
+        ["When", "2018"],
         ["Client", "101edu.com"],
-        ["Stack", "React Native, React Native Web"],
-        ["Media", "Desktop, Mobile"]
+        ["Built with", "React Native"]
       ],
       "body": [
-        "Chem101 is a popular chemistry classroom app for mobile and web. For this contract, I built the Dimensional Analysis module, an interactive mini-app that teaches balanced equations through an intuitive touch and drop interface."
+        "Chem101 is a popular chemistry classroom app for mobile and web build with React Native. I built the Dimensional Analysis module, an interactive mini-app that teaches balanced equations through an intuitive touch and drop interface."
       ],
       "links": [
         ["Chem101", "https://101edu.co"]
@@ -111,12 +113,12 @@
       "slug": "skilltype",
       "title": "Skilltype",
       "info": [
+        ["When", "2019"],
         ["Client", "Skilltype"],
-        ["Stack", "React"],
-        ["Media", "Desktop, Mobile"]
+        ["Built with", "React"]
       ],
       "body": [
-        "Tony Zanders had a vision and a Wordpress prototype for a talent marketplace built especially for information professionals. I led the implementation of the front end of what would become Skilltype.com. From the start, we focused on responsive, <a href='https://medium.com/skilltype/accessibility-skilltype-f879a4a3abb3' target='_blank'>accessible</a> components. With the working MVP I delivered, Skilltype was able to start signing up users and building their community."
+        "Skilltype is a professional talent network for knowledge workers. After I delivered the MVP of the front-end web application in 2019, it has scaled to over 150 organizations in 5 countries."
       ],
       "links": [
         ["Skilltype.com", "https://skilltype.com"]
@@ -138,15 +140,12 @@
       "slug": "inyourland",
       "title": "In Your Land",
       "info": [
-        ["Clients", "Jeff Mertz"],
-        ["Stack", "Node, React Native"],
-        ["Media", "Video Projectors, Chromecasts, iPad App"],
-        ["Venue", "Glyndoor Gallery, Wave Hill Public Gardens"]
+        ["When", "2017"],
+        ["Client", "Jeff Mertz"],
+        ["Built with", "React Native, Node"]
       ],
       "body": [
-        "Jeff Mertz is a photographer and filmmaker. Over the course of three seasons, Jeff filmed birds in the greater New York City area. The footage, along with an original score, became a two-channel video installation for the New York Audubon Society's artist-in-residence program on Govenor's Island during the summer of 2017.",
-        "For the installation's appearance in the Glyndoor Gallery at Wave Hill, I built an interactive iPad app that adds an exploratory component to the experience, as well as the software that synchs the video streams with the content in the apps.",
-        "The web version of the film and iPhone/Android companion apps are in progress."
+        "In Your Land is an interactive iPad app that was synchronized to a two-channel video installation by filmmaker Jeff Mertz. It appeared in the Glyndoor Gallery in New York City in the summer of 2017."
       ],
       "links": [
         ["Exhibition home", "https://www.wavehill.org/arts/exhibits/avifauna-birds-habitat/"],
@@ -171,12 +170,10 @@
       "info": [
         ["Agency", "Ogilvy"],
         ["Clients", "IBM, US Open"],
-        ["Stack", "Javascript, Node.js"],
-        ["Media", "Kiosk, Desktop, Mobile"]
+        ["Built with", "JavaScript, Node"]
       ],
       "body": [
-        "Ogilvy had developed a photobooth kiosk application for IBM that uses the Watson Tone Analyzer API to generate an “emoji portrait” of the user based on their responses to a set of personality questions.",
-        "I was tasked with adapting the Javascript codebase for photobooths at the US Open as well as building a play-at-home version for web and mobile web."
+        "Photobooth kiosk application and play-at-home version for mobile and web to showcase IBM Watson at the US Open in 2016. It uses the Watson Tone Analyzer API to generate an “emoji portrait” of the user based on their responses to a set of personality questions."
       ],
       "links": [],
       "media": {
@@ -198,8 +195,7 @@
       "info": [
         ["Agency", "Ogilvy"],
         ["Clients", "IBM"],
-        ["Stack", "React, Redux, Webpack"],
-        ["Media", "Desktop, Mobile"]
+        ["Built with", "React"]
       ],
       "links": [],
       "media": {
@@ -215,8 +211,7 @@
         }
       },
       "body": [
-        "IBM built the world’s first web API for a quantum computer and asked Ogilvy to develop a page that showcased this new technology.",
-        "I developed a page to demonstrate the capabilities of the new technology. The demo uses the classic shell game Four Card Monte to illustrate the quantum computer’s ability to find a queen in a set of four cards on the first try, whereas a conventional computer requires up to 4 tries."
+        "Landing page with a playable mini-game demonstrating the capabilities of IBM's new quantum computing API. The demo uses the classic shell game Four Card Monte to illustrate the quantum computer’s ability to find a queen in a set of four cards on the first try, whereas a conventional computer requires up to 4 tries."
       ]
     },
     {
@@ -225,8 +220,7 @@
       "info": [
         ["Agency", "Ogilvy"],
         ["Clients", "IBM"],
-        ["Stack", "React, Redux, Webpack"],
-        ["Media", "Kiosk"]
+        ["Built with", "React"]
       ],
       "links": [],
       "media": {
@@ -242,8 +236,7 @@
         }
       },
       "body": [
-        "IBM wanted to show off the ways that Watson was empowering healthcare professionals with a set of kiosks at the HIMSS (Health Information & Management Systems Society) conference.",
-        "I built an interactive video experience that was deployed on nine screens throughout the conference, each with its own  content and chapter navigation."
+        "Interactive video experience showcasing how IBM Watson was empowering healthcare professionals. It was deployed on nine screens throughout the HIMSS (Health Information & Management Systems Society) conference in 2016."
       ]
     }
   ]

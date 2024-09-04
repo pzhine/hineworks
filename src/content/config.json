@@ -1,12 +1,11 @@
 {
   "siteTitle": "Paul Hine: Works",
-  "siteDescription": "Professional portfolio of Paul Hine, technical product manager with specializations in XR systems (augmented and virtual reality), full-body interaction, computer vision and the digital humanities.",
+  "siteDescription": "Versatile software engineer with a professional focus on full-stack development for web and mobile applications. I have 12 years of experience as a web engineer across e-commerce (Eponym), booking (ZocDoc), EdTech (Aktiv Learning and The Databyss Foundation), Social (Skilltype) and commercial (Ogilvy). My skill set spans 0-1 prototyping, digital product launches, full- stack engineering on Node/React stack, interactive systems (Unity), and I have an M.Sc. in user research for interactive systems.",
   "title": ["Paul", "Hine"],
   "greeting": "Nice to see you",
   "intro": [
-    "Technical Product Management, Software Engineering, XR Systems, Full-Body Interaction, Computer Vision, and the Digital Humanities."
+    "Software Engineer with a focus on full-stack development for web and mobile applications."
   ],
-  "cvUrl": "https://public.databyss.cloud/_hineworks/PZH-Resume-CV-Jan2023.pdf",
   "linkedinUrl": "https://linkedin.com/in/pzhine",
   "githubUrl": "https://github.com/pzhine",
   "email": "paul@hine.works",

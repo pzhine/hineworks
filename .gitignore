@@ -21,6 +21,9 @@ coverage
 node_modules
 node_modules.bak
 
+# media
+media
+
 # build directory
 build
 
