@@ -33,7 +33,7 @@
       "title": "AR Magic Lantern",
       "info": [
         ["When", "2018 - Present"],
-        ["Where", "Full-body Interaction Lab (UPF)"],
+        ["Where", "European Media &amp; Immersion Lab"],
         ["Built with", "Unity, Magic ✨"]
       ],
       "body": [
@@ -63,7 +63,7 @@
         ["Built with", "React Native, Unity"]
       ],
       "body": [
-        "Elysium is a no-code AR creation application for iOS and Android devices built with Unity and React Native."
+        "Elysium is a no-code augmented reality creation application for iOS and Android devices. "
       ],
       "links": [
         ["Elysium", "https://elysium.ar/"],
@@ -91,7 +91,7 @@
         ["Built with", "React Native"]
       ],
       "body": [
-        "Chem101 is a popular chemistry classroom app for mobile and web build with React Native. I built the Dimensional Analysis module, an interactive mini-app that teaches balanced equations through an intuitive touch and drop interface."
+        "Chem101 is a chemistry classroom app for web and mobile used by over 700 colleges and universities. I built the Dimensional Analysis module, an interactive mini-app that teaches balanced equations through an intuitive touch and drop interface."
       ],
       "links": [
         ["Chem101", "https://101edu.co"]
@@ -118,7 +118,7 @@
         ["Built with", "React"]
       ],
       "body": [
-        "Skilltype is a professional talent network for knowledge workers. After I delivered the MVP of the front-end web application in 2019, it has scaled to over 150 organizations in 5 countries."
+        "Skilltype is a professional talent network for knowledge workers used by over 150 organizations in 5 countries. "
       ],
       "links": [
         ["Skilltype.com", "https://skilltype.com"]
@@ -236,7 +236,7 @@
         }
       },
       "body": [
-        "Interactive video experience showcasing how IBM Watson was empowering healthcare professionals. It was deployed on nine screens throughout the HIMSS (Health Information & Management Systems Society) conference in 2016."
+        "Interactive video app showcasing how IBM Watson was empowering healthcare professionals. It was deployed on nine screens throughout the HIMSS (Health Information & Management Systems Society) conference in 2016."
       ]
     }
   ]
