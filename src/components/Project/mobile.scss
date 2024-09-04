@@ -55,6 +55,13 @@
       }
     }
 
+    .main-photo {
+      @include center-both;
+      @include video-thumb;
+      width: 270px;
+      margin: 2em 0;
+    }
+
     .thumb, .indexThumbs {
       display: block;
       opacity: 0;

@@ -36,6 +36,10 @@
     display: flex;
     max-width: 100%;
 
+    .main-photo {
+      width: 100%;
+    }
+
     .back {
       position: fixed;
     }

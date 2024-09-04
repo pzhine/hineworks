@@ -18,12 +18,12 @@
       "media": {
         "mobile": {
           "index": ["databyss-photo-collections"],
-          "videos": ["video1-desktop", "video2-desktop"],
+          "videos": ["databyss-photo-collections"],
           "photos": ["databyss-photo-biblio", "databyss-photo-publish"]
         },
         "desktop": {
           "index": ["databyss-photo-collections"],
-          "videos": ["video1-desktop", "video2-desktop"],
+          "videos": ["databyss-photo-collections"],
           "photos": ["databyss-photo-biblio", "databyss-photo-publish"]
         }
       }
@@ -45,12 +45,12 @@
       "media": {
         "mobile": {
           "index": ["arml-photo-logo"],
-          "videos": ["https://www.youtube.com/watch?v=ezjInZS8GYs"],
+          "videos": ["arml-photo-logo"],
           "photos": ["arml-photo-handheld", "arml-photo-muhba"]
         },
         "desktop": {
           "index": ["arml-photo-logo"],
-          "videos": ["https://www.youtube.com/watch?v=ezjInZS8GYs"],
+          "videos": ["arml-photo-logo"],
           "photos": ["arml-photo-handheld", "arml-photo-muhba"]
         }
       }
