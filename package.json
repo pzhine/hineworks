@@ -6,7 +6,7 @@
   "author": "@pzhine",
   "license": "",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "dependencies": {
     "@babel/core": "^7.19.3",
@@ -17,7 +17,7 @@
     "css-loader": "5.2.7",
     "fast-deep-equal": "^1.0.0",
     "html-webpack-plugin": "4.5.1",
-    "kyt": "1.2.5",
+    "kyt": "1.2.9",
     "lodash": "^4.17.4",
     "one-event": "^1.2.0",
     "react": "^16.2.0",
@@ -46,5 +46,6 @@
     "dev": "kyt dev",
     "build": "kyt build",
     "serve": "serve build/public"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
